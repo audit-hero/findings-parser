@@ -1,0 +1,26 @@
+import { Finding, Platform, Repo } from "ah-shared";
+export type FindingStorage = Finding & {
+    content: string;
+};
+export type ParseResult = {
+    contest: FindingsContest;
+    findings: FindingStorage[];
+};
+export type GithubContest = {
+    repo: Repo;
+    platform: Platform;
+    name: string;
+    createDate: number;
+    addDate: number;
+    id: number;
+};
+export type FindingsContestsIndexContest = {
+    c_name: string;
+    c_platform: Platform;
+    c_date: number;
+    c_add_date: number;
+    c_embs_s?: Set<string>;
+};
+export type FindingsContest = FindingsContestsIndexContest & {
+    c_url: string;
+};
