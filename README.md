@@ -3,6 +3,7 @@
 - `yarn add 'findings-parser@audit-hero/findings-parser'`
   - specific commit: append `#commit={hash}'`
 - add Github API access token to env
+
 ```
 export GITHUB_ACCESS_TOKEN=""
 ```
@@ -18,9 +19,12 @@ let findings = await getFindings(getC4Contests, downloadC4Readme, parseC4Finding
 
 - `yarn && yarn test`
 
-### get findings sherlock and c4
+### get findings for sherlock and c4
+
 - `tsx ./src/index.run.ts`
-currently(10/23) returns 6122 c4 and 1218 sherlock findings
+  currently(10/23) returns 6122 c4 and 1218 sherlock findings
+
+![image](./docs/results.png)
 
 ## Add a new findings provider
 

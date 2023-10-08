@@ -2,7 +2,7 @@ import Logger from "js-logger"
 import { ALL_TAGS } from "ah-shared"
 import { githubParams, parserConfig } from "../config.js"
 import { Repo } from "ah-shared"
-import { getPushTimestamp } from "../util.js"
+import { downloadReadme, getPushTimestamp } from "../util.js"
 import { FindingStorage, FindingsContest, GithubContest, ParseResult } from "../types.js"
 import { getTitleItems } from "./c4FindingsParser.util.js"
 
@@ -48,16 +48,11 @@ export const parseC4Findings = (contest: GithubContest, readme: string): ParseRe
 }
 
 export const downloadC4Readme = async (contest: GithubContest) => {
-  let repo = contest.repo
-  let readme = await fetch(`${repo.url}/contents/report.md`, githubParams)
-    .then(async it => {
-      let json = await it.json()
-      if (json.message !== undefined) return undefined
-      return Buffer.from(json.content, "base64").toString()
-    })
-    .catch(e => {
-      Logger.warn(`c4 readme download error for contest ${contest.name}(${repo.url})\n${e}`)
-    })
+  let readme = await downloadReadme(
+    contest,
+    "contents/report.md",
+    (msg) => Logger.warn(msg)
+  )
 
   return readme
 }

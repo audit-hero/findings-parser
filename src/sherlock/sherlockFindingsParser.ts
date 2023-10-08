@@ -1,7 +1,7 @@
 import { Repo, Severity } from "ah-shared"
 import { githubParams, parserConfig } from "../config.js"
 import { FindingStorage, FindingsContest, GithubContest } from "../types.js"
-import { getPushTimestamp, withTagsAndName } from "../util.js"
+import { downloadReadme, getPushTimestamp, withTagsAndName } from "../util.js"
 import Logger from "js-logger"
 
 export async function getSherlockContests(): Promise<GithubContest[]> {
@@ -28,17 +28,11 @@ export async function getSherlockContests(): Promise<GithubContest[]> {
 }
 
 export const downloadSherlockReadme = async (contest: GithubContest) => {
-  let repo = contest.repo
-  let readme = await fetch(`${repo.url}/contents/README.md`, githubParams)
-    .then(async it => {
-      let json = await it.json()
-      if (json.message !== undefined) return undefined
-      return Buffer.from(json.content, "base64").toString()
-    })
-    .catch(e => {
-      Logger.warn(`sherlock readme download error for contest ${contest.name}(${repo.url})\n${e}`)
-      return undefined
-    })
+  let readme = await downloadReadme(
+    contest,
+    "contents/README.md",
+    (msg) => Logger.warn(msg)
+  )
 
   return readme
 }

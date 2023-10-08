@@ -1,5 +1,5 @@
 import { ALL_TAGS } from "ah-shared";
-import { parserConfig } from "./config.js";
+import { githubParams, parserConfig } from "./config.js";
 export const getPushTimestamp = (timestamp) => Math.floor(new Date(timestamp).getTime() / 1000);
 export const withTagsAndName = (finding) => {
     // get name from body if it doesnt exist
@@ -27,5 +27,22 @@ export const getFindings = async (getContests, downloadReadme, parse) => {
         return parse(contests[i], r);
     }).filter(it => it !== undefined);
     return findings;
+};
+export const downloadReadme = async (contest, path, errorLog) => {
+    let repo = contest.repo;
+    let readme = await fetch(`${repo.url}/${path}`, githubParams)
+        .then(async (it) => {
+        let json = await it.json();
+        if (json.message !== undefined) {
+            errorLog(`${contest.platform} readme download error for contest ${contest.name}(${repo.url})\n${json.message}`);
+            return undefined;
+        }
+        return Buffer.from(json.content, "base64").toString();
+    })
+        .catch(e => {
+        errorLog(`${contest.platform} readme download error for contest ${contest.name}(${repo.url})\n${e}`);
+        return undefined;
+    });
+    return readme;
 };
 //# sourceMappingURL=util.js.map

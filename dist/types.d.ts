@@ -24,3 +24,10 @@ export type FindingsContestsIndexContest = {
 export type FindingsContest = FindingsContestsIndexContest & {
     c_url: string;
 };
+export type Result2<T> = {
+    ok: true;
+    value: T;
+} | {
+    ok: false;
+    error: string;
+};

@@ -1,7 +1,7 @@
 import Logger from "js-logger";
 import { ALL_TAGS } from "ah-shared";
 import { githubParams, parserConfig } from "../config.js";
-import { getPushTimestamp } from "../util.js";
+import { downloadReadme, getPushTimestamp } from "../util.js";
 import { getTitleItems } from "./c4FindingsParser.util.js";
 export async function getC4Contests() {
     // get repos which end with -findings and include report.md file
@@ -37,17 +37,7 @@ export const parseC4Findings = (contest, readme) => {
     };
 };
 export const downloadC4Readme = async (contest) => {
-    let repo = contest.repo;
-    let readme = await fetch(`${repo.url}/contents/report.md`, githubParams)
-        .then(async (it) => {
-        let json = await it.json();
-        if (json.message !== undefined)
-            return undefined;
-        return Buffer.from(json.content, "base64").toString();
-    })
-        .catch(e => {
-        Logger.warn(`c4 readme download error for contest ${contest.name}(${repo.url})\n${e}`);
-    });
+    let readme = await downloadReadme(contest, "contents/report.md", (msg) => Logger.warn(msg));
     return readme;
 };
 const parse = (md) => {

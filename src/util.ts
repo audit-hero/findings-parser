@@ -1,6 +1,6 @@
 import { ALL_TAGS } from "ah-shared"
-import { FindingStorage, GithubContest, ParseResult } from "./types.js"
-import { parserConfig } from "./config.js"
+import { FindingStorage, GithubContest, ParseResult, Result2 } from "./types.js"
+import { githubParams, parserConfig } from "./config.js"
 
 export const getPushTimestamp = (timestamp: string) => Math.floor(new Date(timestamp).getTime() / 1000)
 
@@ -33,4 +33,26 @@ export const getFindings = async (
     return parse(contests[i], r)
   }).filter(it => it !== undefined) as ParseResult[]
   return findings
+}
+
+export const downloadReadme = async (
+  contest: GithubContest,
+  path: string,
+  errorLog: (msg: string) => void): Promise<string | undefined> => {
+  let repo = contest.repo
+  let readme = await fetch(`${repo.url}/${path}`, githubParams)
+    .then(async it => {
+      let json = await it.json()
+      if (json.message !== undefined) {
+        errorLog(`${contest.platform} readme download error for contest ${contest.name}(${repo.url})\n${json.message}`)
+        return undefined
+      }
+      return Buffer.from(json.content, "base64").toString()
+    })
+    .catch(e => {
+      errorLog(`${contest.platform} readme download error for contest ${contest.name}(${repo.url})\n${e}`)
+      return undefined
+    })
+
+  return readme
 }

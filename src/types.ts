@@ -16,3 +16,5 @@ export type FindingsContestsIndexContest = { c_name: string, c_platform: Platfor
 export type FindingsContest = FindingsContestsIndexContest & {
   c_url: string // contest findings url
 }
+
+export type Result2<T> = { ok: true, value: T } | { ok: false, error: string }
