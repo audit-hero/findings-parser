@@ -24,7 +24,7 @@ export const withTagsAndName = (finding: FindingStorage) => {
 
 export const getFindings = async (
   getContests: () => Promise<GithubContest[]>,
-  downloadReadme: (contest: GithubContest) => Promise<string | void>,
+  downloadReadme: (contest: GithubContest) => Promise<string | undefined>,
   parse: (contest: GithubContest, readme: string) => ParseResult) => {
   let contests = await getContests()
   let readmes = await Promise.all(contests.map(c => downloadReadme(c)))
