@@ -1,6 +1,7 @@
 ## Add to your existing esm project
 
 - `yarn add 'findings-parser@audit-hero/findings-parser'`
+  - specific commit: append `#commit={hash}'`
 - add Github API access token to env
 ```
 export GITHUB_ACCESS_TOKEN=""
