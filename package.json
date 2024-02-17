@@ -12,14 +12,14 @@
     "node": ">=10.12"
   },
   "devDependencies": {
-    "@types/node": "^20.1.5",
+    "@types/node": "^20.11.17",
     "esbuild": "^0.12.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3",
     "vitest": "^0.34.4"
   },
   "dependencies": {
-    "ah-shared": "audit-hero/ah-shared#d5c9d8558c6a276c64452fe29484373d661c2c0c",
+    "ah-shared": "audit-hero/ah-shared#7f26106e1e393836d7639bdbb4c924d9c084d8cf",
     "js-logger": "^1.6.1"
   }
 }
