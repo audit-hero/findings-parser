@@ -409,12 +409,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ah-shared@audit-hero/ah-shared#7f26106e1e393836d7639bdbb4c924d9c084d8cf":
+"ah-shared@audit-hero/ah-shared#d6caf22be7d1d543100dbf60ff1929ca72729fca":
   version: 0.0.0
-  resolution: "ah-shared@https://github.com/audit-hero/ah-shared.git#commit=7f26106e1e393836d7639bdbb4c924d9c084d8cf"
+  resolution: "ah-shared@https://github.com/audit-hero/ah-shared.git#commit=d6caf22be7d1d543100dbf60ff1929ca72729fca"
   dependencies:
     text-splitter: "tonisives/text-splitter#commit=c44985757b5aaa7f262041a55dfccd49e300db58"
-  checksum: 346c6b347d4d4d378290a96c0c859f245b41bd7eeb87e297484bd860a206337c2590935eeddbdcc52ba226b7bc22333bb594a6cef8d42bde300ccce5fe321d61
+  checksum: 3253fa600ef69c7a2c327a9e2673db398393c435d9ae836fc822ef3875db1f52ed5255f9c6f5a5a9e5a3290865174ac177baa60b2389dc00000aa033c74a594d
   languageName: node
   linkType: hard
 
@@ -823,7 +823,7 @@ __metadata:
   resolution: "findings-parser@workspace:."
   dependencies:
     "@types/node": "npm:^20.11.17"
-    ah-shared: "audit-hero/ah-shared#7f26106e1e393836d7639bdbb4c924d9c084d8cf"
+    ah-shared: "audit-hero/ah-shared#d6caf22be7d1d543100dbf60ff1929ca72729fca"
     esbuild: "npm:^0.12.5"
     js-logger: "npm:^1.6.1"
     ts-node: "npm:^10.9.1"
