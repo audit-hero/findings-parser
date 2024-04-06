@@ -1,7 +1,9 @@
 import { getTitleItems } from "./c4FindingsParser.util.js";
 import { it, expect } from "vitest";
+import fs from "fs";
+import { parseC4Findings } from "./c4FindingsParser.js";
 let title = `## [[H-01] [WP-H5] \`L1Migrator.sol#migrateETH()\` does not send \`bridgeMinter\`'s ETH to L2 causing ETH get frozen in the contract](https://github.com/code-423n4/2022-01-livepeer-findings/issues/205)`;
-it('should parse title', () => {
+it("should parse title", () => {
     let it = getTitleItems(title);
     expect(it.name).toEqual(`\`L1Migrator.sol#migrateETH()\` does not send \`bridgeMinter\`'s ETH to L2 causing ETH get frozen in the contract`);
 });
@@ -17,5 +19,22 @@ it("should parse title 3", () => {
 it("should parse title 4", () => {
     let title = `## [17]] Large multiples of ten should use scientific notation`;
     let it = getTitleItems(title);
+});
+it("should remove judge comments", () => {
+    let md = fs.readFileSync("src/c4/fixtures/withJudgeComments.md", "utf-8");
+    let contest = {
+        createDate: 1,
+        addDate: 1,
+        repo: {
+            name: "test",
+            url: "url",
+        },
+    };
+    let result = parseC4Findings(contest, md);
+    result.findings.forEach((finding) => {
+        finding.content.split("\n").forEach((line) => {
+            expect(line).not.toMatch(/^\*\*\[.*$/);
+        });
+    });
 });
 //# sourceMappingURL=c4FindingsParser.test.js.map

@@ -77,9 +77,9 @@ const parse = (md) => {
             break;
         }
         if (currentFinding) {
-            if (parserConfig.dontIncludeJudgeComments && line.startsWith("### Recommended"))
-                afterRecommended = true;
-            if (afterRecommended && (line.startsWith("**["))) {
+            // bold link seems to be the start of the discussion part
+            // I checked ~ 10 findings with **[, and they were all judge comments.
+            if (parserConfig.dontIncludeJudgeComments && (line.startsWith("**["))) {
                 ignoreJudgeComments = true;
             }
             else {
