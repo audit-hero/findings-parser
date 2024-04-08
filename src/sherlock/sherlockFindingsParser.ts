@@ -10,35 +10,54 @@ export async function getSherlockContests(): Promise<GithubContest[]> {
   var page = 1
 
   while (reposLength == 100) {
-    let resp = await fetch(`https://api.github.com/orgs/sherlock-audit/repos?per_page=100&page=${page}`, githubParams)
+    let resp = await fetch(
+      `https://api.github.com/orgs/sherlock-audit/repos?per_page=100&page=${page}`,
+      githubParams
+    )
     let repos: Repo[] = await resp.json()
 
-    reposBuilder = reposBuilder.concat(repos.map(it => {
-      let timestamp = getPushTimestamp(it.created_at) // overwritten in contestResolver
-      return { repo: it, platform: "sherlock", createDate: timestamp, addDate: timestamp, id: 0, name: it.name }
-    }))
+    reposBuilder = reposBuilder.concat(
+      repos.map((it) => {
+        let timestamp = getPushTimestamp(it.created_at) // overwritten in contestResolver
+        return {
+          repo: it,
+          platform: "sherlock",
+          createDate: timestamp,
+          addDate: timestamp,
+          id: 0,
+          name: it.name,
+        }
+      })
+    )
 
     reposLength = repos.length
     page++
   }
 
-  let repos = reposBuilder.filter(it => it.repo.name.includes("-judging"))
+  let repos = reposBuilder.filter((it) => it.repo.name.includes("-judging"))
 
   return repos
 }
 
-export const downloadSherlockReadme = async (contest: GithubContest) => {
+export const downloadSherlockReadme = async (
+  contest: GithubContest,
+  cache?: boolean
+) => {
   let readme = await downloadReadme(
     contest,
     "contents/README.md",
-    (msg) => Logger.warn(msg)
+    (msg) => Logger.warn(msg),
+    cache ?? false
   )
 
   return readme
 }
 
-export const parseSherlockFindings = (contest: GithubContest, readme: string) => {
-  Logger.debug(`starting ${contest.repo.url}`);
+export const parseSherlockFindings = (
+  contest: GithubContest,
+  readme: string
+) => {
+  Logger.debug(`starting ${contest.repo.url}`)
 
   let findings: FindingStorage[] = []
 
@@ -48,9 +67,9 @@ export const parseSherlockFindings = (contest: GithubContest, readme: string) =>
   const addFinding = (builder: Partial<FindingStorage>) => {
     if (builder) {
       let finding: FindingStorage = {
-        ...builder as Required<FindingStorage>,
+        ...(builder as Required<FindingStorage>),
         platform: "sherlock",
-        tags: ["none"]
+        tags: ["none"],
       }
       findings.push(withTagsAndName(finding))
     }
@@ -71,19 +90,20 @@ export const parseSherlockFindings = (contest: GithubContest, readme: string) =>
       }
       if (line.includes("M-")) {
         builder.severity = Severity.MEDIUM
-      }
-      else if (line.includes("H-")) {
+      } else if (line.includes("H-")) {
         builder.severity = Severity.HIGH
       }
 
       ignoreJudgeComments = false
-    }
-    else {
+    } else {
       if ((builder.content?.length ?? 0) < 3 && line.startsWith("Source: ")) {
         builder.url = line.split("Source:")[1].trim()
-      }
-      else {
-        if (parserConfig.dontIncludeJudgeComments && line.startsWith("## Discussion")) ignoreJudgeComments = true
+      } else {
+        if (
+          parserConfig.dontIncludeJudgeComments &&
+          line.startsWith("## Discussion")
+        )
+          ignoreJudgeComments = true
 
         if (!ignoreJudgeComments) builder.content += `${line}\n`
       }
@@ -102,6 +122,6 @@ export const parseSherlockFindings = (contest: GithubContest, readme: string) =>
 
   return {
     contest: findingContest,
-    findings
+    findings,
   }
 }

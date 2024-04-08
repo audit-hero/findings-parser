@@ -11,14 +11,21 @@ export async function getC4Contests() {
     while (reposLength == 100) {
         let resp = await fetch(`https://api.github.com/orgs/code-423n4/repos?per_page=100&page=${page}`, githubParams);
         let repos = await resp.json();
-        reposBuilder = reposBuilder.concat(repos.map(it => {
+        reposBuilder = reposBuilder.concat(repos.map((it) => {
             let timestamp = getPushTimestamp(it.created_at); // overwritten in contestResolver
-            return { repo: it, platform: "c4", createDate: timestamp, addDate: timestamp, id: 0, name: it.name };
+            return {
+                repo: it,
+                platform: "c4",
+                createDate: timestamp,
+                addDate: timestamp,
+                id: 0,
+                name: it.name,
+            };
         }));
         reposLength = repos.length;
         page++;
     }
-    let repos = reposBuilder.filter(it => it.repo.name.includes("-findings"));
+    let repos = reposBuilder.filter((it) => it.repo.name.includes("-findings"));
     return repos;
 }
 export const parseC4Findings = (contest, readme) => {
@@ -29,15 +36,15 @@ export const parseC4Findings = (contest, readme) => {
         c_date: contest.createDate,
         c_add_date: contest.addDate,
         c_url: contest.repo.url,
-        c_platform: "c4"
+        c_platform: "c4",
     };
     return {
         contest: findingContest,
-        findings
+        findings,
     };
 };
-export const downloadC4Readme = async (contest) => {
-    let readme = await downloadReadme(contest, "contents/report.md", (msg) => Logger.warn(msg));
+export const downloadC4Readme = async (contest, cache) => {
+    let readme = await downloadReadme(contest, "contents/report.md", (msg) => Logger.warn(msg), cache ?? false);
     return readme;
 };
 const parse = (md) => {
@@ -61,13 +68,16 @@ const parse = (md) => {
                 url: titleItems.url,
                 severity: titleItems.severity,
                 tags: ["none"],
-                platform: "c4"
+                platform: "c4",
             };
             afterRecommended = false;
             ignoreJudgeComments = false;
             continue;
         }
-        else if (ignoreJudgeComments || line.startsWith("# Medium") || line.startsWith("# Low") || line === "***")
+        else if (ignoreJudgeComments ||
+            line.startsWith("# Medium") ||
+            line.startsWith("# Low") ||
+            line === "***")
             continue;
         else if (line.startsWith("# Gas")) {
             if (currentFinding) {
@@ -79,7 +89,7 @@ const parse = (md) => {
         if (currentFinding) {
             // bold link seems to be the start of the discussion part
             // I checked ~ 10 findings with **[, and they were all judge comments.
-            if (parserConfig.dontIncludeJudgeComments && (line.startsWith("**["))) {
+            if (parserConfig.dontIncludeJudgeComments && line.startsWith("**[")) {
                 ignoreJudgeComments = true;
             }
             else {
@@ -97,7 +107,8 @@ const withTagsAndName = (finding) => {
         return finding;
     for (let i = 1; i < ALL_TAGS.length; ++i) {
         let tag = ALL_TAGS[i];
-        if (finding.name.toLowerCase().includes(tag) || finding.content.toLowerCase().includes(tag)) {
+        if (finding.name.toLowerCase().includes(tag) ||
+            finding.content.toLowerCase().includes(tag)) {
             finding.tags?.push(tag);
         }
     }

@@ -9,18 +9,25 @@ export async function getSherlockContests() {
     while (reposLength == 100) {
         let resp = await fetch(`https://api.github.com/orgs/sherlock-audit/repos?per_page=100&page=${page}`, githubParams);
         let repos = await resp.json();
-        reposBuilder = reposBuilder.concat(repos.map(it => {
+        reposBuilder = reposBuilder.concat(repos.map((it) => {
             let timestamp = getPushTimestamp(it.created_at); // overwritten in contestResolver
-            return { repo: it, platform: "sherlock", createDate: timestamp, addDate: timestamp, id: 0, name: it.name };
+            return {
+                repo: it,
+                platform: "sherlock",
+                createDate: timestamp,
+                addDate: timestamp,
+                id: 0,
+                name: it.name,
+            };
         }));
         reposLength = repos.length;
         page++;
     }
-    let repos = reposBuilder.filter(it => it.repo.name.includes("-judging"));
+    let repos = reposBuilder.filter((it) => it.repo.name.includes("-judging"));
     return repos;
 }
-export const downloadSherlockReadme = async (contest) => {
-    let readme = await downloadReadme(contest, "contents/README.md", (msg) => Logger.warn(msg));
+export const downloadSherlockReadme = async (contest, cache) => {
+    let readme = await downloadReadme(contest, "contents/README.md", (msg) => Logger.warn(msg), cache ?? false);
     return readme;
 };
 export const parseSherlockFindings = (contest, readme) => {
@@ -33,7 +40,7 @@ export const parseSherlockFindings = (contest, readme) => {
             let finding = {
                 ...builder,
                 platform: "sherlock",
-                tags: ["none"]
+                tags: ["none"],
             };
             findings.push(withTagsAndName(finding));
         }
@@ -64,7 +71,8 @@ export const parseSherlockFindings = (contest, readme) => {
                 builder.url = line.split("Source:")[1].trim();
             }
             else {
-                if (parserConfig.dontIncludeJudgeComments && line.startsWith("## Discussion"))
+                if (parserConfig.dontIncludeJudgeComments &&
+                    line.startsWith("## Discussion"))
                     ignoreJudgeComments = true;
                 if (!ignoreJudgeComments)
                     builder.content += `${line}\n`;
@@ -82,7 +90,7 @@ export const parseSherlockFindings = (contest, readme) => {
     };
     return {
         contest: findingContest,
-        findings
+        findings,
     };
 };
 //# sourceMappingURL=sherlockFindingsParser.js.map

@@ -3,8 +3,14 @@ import { ALL_TAGS } from "ah-shared"
 import { githubParams, parserConfig } from "../config.js"
 import { Repo } from "ah-shared"
 import { downloadReadme, getPushTimestamp } from "../util.js"
-import { FindingStorage, FindingsContest, GithubContest, ParseResult } from "../types.js"
+import {
+  FindingStorage,
+  FindingsContest,
+  GithubContest,
+  ParseResult,
+} from "../types.js"
 import { getTitleItems } from "./c4FindingsParser.util.js"
+import fs from "fs"
 
 export async function getC4Contests(): Promise<GithubContest[]> {
   // get repos which end with -findings and include report.md file
@@ -12,24 +18,39 @@ export async function getC4Contests(): Promise<GithubContest[]> {
   var reposBuilder: GithubContest[] = []
   var page = 1
   while (reposLength == 100) {
-    let resp = await fetch(`https://api.github.com/orgs/code-423n4/repos?per_page=100&page=${page}`, githubParams)
+    let resp = await fetch(
+      `https://api.github.com/orgs/code-423n4/repos?per_page=100&page=${page}`,
+      githubParams
+    )
     let repos: Repo[] = await resp.json()
 
-    reposBuilder = reposBuilder.concat(repos.map(it => {
-      let timestamp = getPushTimestamp(it.created_at) // overwritten in contestResolver
-      return { repo: it, platform: "c4", createDate: timestamp, addDate: timestamp, id: 0, name: it.name }
-    }))
+    reposBuilder = reposBuilder.concat(
+      repos.map((it) => {
+        let timestamp = getPushTimestamp(it.created_at) // overwritten in contestResolver
+        return {
+          repo: it,
+          platform: "c4",
+          createDate: timestamp,
+          addDate: timestamp,
+          id: 0,
+          name: it.name,
+        }
+      })
+    )
 
     reposLength = repos.length
     page++
   }
 
-  let repos = reposBuilder.filter(it => it.repo.name.includes("-findings"))
+  let repos = reposBuilder.filter((it) => it.repo.name.includes("-findings"))
   return repos
 }
 
-export const parseC4Findings = (contest: GithubContest, readme: string): ParseResult => {
-  Logger.debug(`starting ${contest.repo.url}`);
+export const parseC4Findings = (
+  contest: GithubContest,
+  readme: string
+): ParseResult => {
+  Logger.debug(`starting ${contest.repo.url}`)
 
   let findings = parse(readme)
 
@@ -38,20 +59,24 @@ export const parseC4Findings = (contest: GithubContest, readme: string): ParseRe
     c_date: contest.createDate,
     c_add_date: contest.addDate,
     c_url: contest.repo.url,
-    c_platform: "c4"
+    c_platform: "c4",
   }
 
   return {
     contest: findingContest,
-    findings
+    findings,
   }
 }
 
-export const downloadC4Readme = async (contest: GithubContest) => {
+export const downloadC4Readme = async (
+  contest: GithubContest,
+  cache?: boolean
+) => {
   let readme = await downloadReadme(
     contest,
     "contents/report.md",
-    (msg) => Logger.warn(msg)
+    (msg) => Logger.warn(msg),
+    cache ?? false
   )
 
   return readme
@@ -83,15 +108,20 @@ const parse = (md: string) => {
         url: titleItems.url,
         severity: titleItems.severity,
         tags: ["none"],
-        platform: "c4"
+        platform: "c4",
       }
 
       afterRecommended = false
       ignoreJudgeComments = false
 
       continue
-    }
-    else if (ignoreJudgeComments || line.startsWith("# Medium") || line.startsWith("# Low") || line === "***") continue
+    } else if (
+      ignoreJudgeComments ||
+      line.startsWith("# Medium") ||
+      line.startsWith("# Low") ||
+      line === "***"
+    )
+      continue
     else if (line.startsWith("# Gas")) {
       if (currentFinding) {
         findings.push(withTagsAndName(currentFinding))
@@ -103,10 +133,9 @@ const parse = (md: string) => {
     if (currentFinding) {
       // bold link seems to be the start of the discussion part
       // I checked ~ 10 findings with **[, and they were all judge comments.
-      if (parserConfig.dontIncludeJudgeComments && (line.startsWith("**["))) {
+      if (parserConfig.dontIncludeJudgeComments && line.startsWith("**[")) {
         ignoreJudgeComments = true
-      }
-      else {
+      } else {
         currentFinding.content += `${line}\n`
       }
     }
@@ -123,7 +152,10 @@ const withTagsAndName = (finding: FindingStorage) => {
 
   for (let i = 1; i < ALL_TAGS.length; ++i) {
     let tag = ALL_TAGS[i]
-    if (finding.name.toLowerCase().includes(tag) || finding.content.toLowerCase().includes(tag)) {
+    if (
+      finding.name.toLowerCase().includes(tag) ||
+      finding.content.toLowerCase().includes(tag)
+    ) {
       finding.tags?.push(tag)
     }
   }
