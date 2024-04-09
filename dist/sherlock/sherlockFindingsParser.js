@@ -47,7 +47,7 @@ export const parseSherlockFindings = (contest, readme) => {
     };
     let ignoreJudgeComments = false;
     lines.forEach((line, index) => {
-        if (line.includes("# Issue ")) {
+        if (line.match(/^# Issue .*/)) {
             addFinding(builder);
             let name = line.replace("# Issue ", "");
             if (name[3] == ":")
