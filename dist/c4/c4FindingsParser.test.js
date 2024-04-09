@@ -20,21 +20,29 @@ it("should parse title 4", () => {
     let title = `## [17]] Large multiples of ten should use scientific notation`;
     let it = getTitleItems(title);
 });
+let contest = {
+    createDate: 1,
+    addDate: 1,
+    repo: {
+        name: "test",
+        url: "url",
+    },
+};
 it("should remove judge comments", () => {
     let md = fs.readFileSync("src/c4/fixtures/withJudgeComments.md", "utf-8");
-    let contest = {
-        createDate: 1,
-        addDate: 1,
-        repo: {
-            name: "test",
-            url: "url",
-        },
-    };
     let result = parseC4Findings(contest, md);
     result.findings.forEach((finding) => {
         finding.content.split("\n").forEach((line) => {
             expect(line).not.toMatch(/^\*\*\[.*$/);
         });
     });
+});
+it("should retain other judge comment like links", () => {
+    let md = fs.readFileSync("src/c4/fixtures/withOtherComments.md", "utf-8");
+    let result = parseC4Findings(contest, md);
+    let finding = result.findings.find((finding) => {
+        return finding.name.includes("Missing access control on");
+    });
+    expect(finding.content).toContain("### Recommended Mitigation Steps");
 });
 //# sourceMappingURL=c4FindingsParser.test.js.map

@@ -87,9 +87,8 @@ const parse = (md) => {
             break;
         }
         if (currentFinding) {
-            // bold link seems to be the start of the discussion part
-            // I checked ~ 10 findings with **[, and they were all judge comments.
-            if (parserConfig.dontIncludeJudgeComments && line.startsWith("**[")) {
+            // bold link with 'commented', 'confirmed' seem to be judge comments
+            if (parserConfig.dontIncludeJudgeComments && line.match(/^\*\*\[.*( commented| confirmed| acknowledged)\]/)) {
                 ignoreJudgeComments = true;
             }
             else {

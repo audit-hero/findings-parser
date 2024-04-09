@@ -33,20 +33,33 @@ it("should parse title 4", () => {
   let it = getTitleItems(title)
 })
 
+let contest: GithubContest = {
+  createDate: 1,
+  addDate: 1,
+  repo: {
+    name: "test",
+    url: "url",
+  },
+} as any
+
 it("should remove judge comments", () => {
   let md = fs.readFileSync("src/c4/fixtures/withJudgeComments.md", "utf-8")
-  let contest: GithubContest = {
-    createDate: 1,
-    addDate: 1,
-    repo: {
-      name: "test",
-      url: "url",
-    },
-  } as any
+  
   let result = parseC4Findings(contest, md)
   result.findings.forEach((finding) => {
     finding.content.split("\n").forEach((line) => {
       expect(line).not.toMatch(/^\*\*\[.*$/)
     })
   })
+})
+
+it("should retain other judge comment like links", () => {
+  let md = fs.readFileSync("src/c4/fixtures/withOtherComments.md", "utf-8")
+
+  let result = parseC4Findings(contest, md)
+  let finding = result.findings.find((finding) => {
+    return finding.name.includes("Missing access control on")
+  })
+
+  expect(finding!.content).toContain("### Recommended Mitigation Steps")
 })
