@@ -74,10 +74,14 @@ const parse = (md) => {
             ignoreJudgeComments = false;
             continue;
         }
-        else if (ignoreJudgeComments ||
-            line.startsWith("# Medium") ||
-            line.startsWith("# Low") ||
-            line === "***")
+        else if (line.startsWith("# Medium") || line.startsWith("# Low")) {
+            if (currentFinding) {
+                findings.push(withTagsAndName(currentFinding));
+                currentFinding = undefined;
+            }
+            continue;
+        }
+        else if (ignoreJudgeComments || line === "***")
             continue;
         else if (line.startsWith("# Gas")) {
             if (currentFinding) {
@@ -88,7 +92,8 @@ const parse = (md) => {
         }
         if (currentFinding) {
             // bold link with 'commented', 'confirmed' seem to be judge comments
-            if (parserConfig.dontIncludeJudgeComments && line.match(/^\*\*\[.*( commented| confirmed| acknowledged)\]/)) {
+            if (parserConfig.dontIncludeJudgeComments &&
+                line.match(/^\*\*\[.*( commented| confirmed| acknowledged)\]/)) {
                 ignoreJudgeComments = true;
             }
             else {

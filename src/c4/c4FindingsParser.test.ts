@@ -63,3 +63,12 @@ it("should retain other judge comment like links", () => {
 
   expect(finding!.content).toContain("### Recommended Mitigation Steps")
 })
+
+it("should not merge with next severity findings", () => {
+  let md = fs.readFileSync("src/c4/fixtures/withMergedNFinding.md", "utf-8")
+  let result = parseC4Findings(contest, md)
+
+  result.findings.forEach((finding) => {
+    expect(finding.content).not.toContain("Use of `override` is unnecessary")
+  })
+})
