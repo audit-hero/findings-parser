@@ -53,7 +53,7 @@ const parse = (md) => {
     let findings = [];
     // create findings items
     let afterRecommended = false;
-    let ignoreJudgeComments = false;
+    let ignoringJudgeComments = false;
     for (let i = 0; i < lines.length; i++) {
         let line = lines[i];
         if (line.startsWith("## [")) {
@@ -71,7 +71,7 @@ const parse = (md) => {
                 platform: "c4",
             };
             afterRecommended = false;
-            ignoreJudgeComments = false;
+            ignoringJudgeComments = false;
             continue;
         }
         else if (line.startsWith("# Medium") || line.startsWith("# Low")) {
@@ -81,7 +81,7 @@ const parse = (md) => {
             }
             continue;
         }
-        else if (ignoreJudgeComments || line === "***")
+        else if (ignoringJudgeComments || line === "***")
             continue;
         else if (line.startsWith("# Gas")) {
             if (currentFinding) {
@@ -91,10 +91,10 @@ const parse = (md) => {
             break;
         }
         if (currentFinding) {
-            // bold link with 'commented', 'confirmed' seem to be judge comments
+            // bold link with 'commented', 'confirmed' are judge comments
             if (parserConfig.dontIncludeJudgeComments &&
-                line.match(/^\*\*\[.*( commented| confirmed| acknowledged)\]/)) {
-                ignoreJudgeComments = true;
+                line.match(/^\*\*\[.*( commented| confirmed| acknowledged).*\]/)) {
+                ignoringJudgeComments = true;
             }
             else {
                 currentFinding.content += `${line}\n`;

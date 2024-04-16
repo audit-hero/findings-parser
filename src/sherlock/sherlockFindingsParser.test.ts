@@ -91,3 +91,9 @@ it("should find correct issue start headers", () => {
       .at(-1)
   ).toBe("## Recommendation")
 })
+
+it("removes text before found by if it is the first header", () => {
+  // ~~there can be some irrelevant text before Found by~~
+  // done in embs store
+
+})

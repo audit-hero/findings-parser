@@ -37,6 +37,15 @@ it("should remove judge comments", () => {
         });
     });
 });
+it("should remove more judge comments", () => {
+    let md = fs.readFileSync("src/c4/fixtures/withJudgeCommentsMore.md", "utf-8");
+    let result = parseC4Findings(contest, md);
+    result.findings.forEach((finding) => {
+        finding.content.split("\n").forEach((line) => {
+            expect(line).not.toMatch(/^\*\*\[.*$/);
+        });
+    });
+});
 it("should retain other judge comment like links", () => {
     let md = fs.readFileSync("src/c4/fixtures/withOtherComments.md", "utf-8");
     let result = parseC4Findings(contest, md);

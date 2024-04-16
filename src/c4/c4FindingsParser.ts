@@ -90,7 +90,7 @@ const parse = (md: string) => {
 
   // create findings items
   let afterRecommended = false
-  let ignoreJudgeComments = false
+  let ignoringJudgeComments = false
 
   for (let i = 0; i < lines.length; i++) {
     let line = lines[i]
@@ -112,7 +112,7 @@ const parse = (md: string) => {
       }
 
       afterRecommended = false
-      ignoreJudgeComments = false
+      ignoringJudgeComments = false
 
       continue
     } else if (line.startsWith("# Medium") || line.startsWith("# Low")) {
@@ -121,7 +121,7 @@ const parse = (md: string) => {
         currentFinding = undefined
       }
       continue
-    } else if (ignoreJudgeComments || line === "***") continue
+    } else if (ignoringJudgeComments || line === "***") continue
     else if (line.startsWith("# Gas")) {
       if (currentFinding) {
         findings.push(withTagsAndName(currentFinding))
@@ -131,12 +131,12 @@ const parse = (md: string) => {
     }
 
     if (currentFinding) {
-      // bold link with 'commented', 'confirmed' seem to be judge comments
+      // bold link with 'commented', 'confirmed' are judge comments
       if (
         parserConfig.dontIncludeJudgeComments &&
-        line.match(/^\*\*\[.*( commented| confirmed| acknowledged)\]/)
+        line.match(/^\*\*\[.*( commented| confirmed| acknowledged).*\]/)
       ) {
-        ignoreJudgeComments = true
+        ignoringJudgeComments = true
       } else {
         currentFinding.content += `${line}\n`
       }
