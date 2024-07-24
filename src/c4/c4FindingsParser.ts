@@ -3,16 +3,13 @@ import { ALL_TAGS } from "ah-shared"
 import { githubParams, parserConfig } from "../config.js"
 import { Repo } from "ah-shared"
 import { downloadReadme, getPushTimestamp } from "../util.js"
-import {
-  FindingStorage,
-  FindingsContest,
-  GithubContest,
-  ParseResult,
-} from "../types.js"
+import { FindingStorage, FindingsContest, GithubContest, ParseResult } from "../types.js"
 import { getTitleItems } from "./c4FindingsParser.util.js"
-import fs from "fs"
+import { getCached, writeCache } from "../cache.js"
 
 export async function getC4Contests(): Promise<GithubContest[]> {
+  let cached = getCached("c4Contests")
+  if (cached) return cached
   // get repos which end with -findings and include report.md file
   var reposLength = 100
   var reposBuilder: GithubContest[] = []
@@ -20,7 +17,7 @@ export async function getC4Contests(): Promise<GithubContest[]> {
   while (reposLength == 100) {
     let resp = await fetch(
       `https://api.github.com/orgs/code-423n4/repos?per_page=100&page=${page}`,
-      githubParams
+      githubParams,
     )
     let repos: Repo[] = await resp.json()
 
@@ -35,7 +32,7 @@ export async function getC4Contests(): Promise<GithubContest[]> {
           id: 0,
           name: it.name,
         }
-      })
+      }),
     )
 
     reposLength = repos.length
@@ -43,13 +40,12 @@ export async function getC4Contests(): Promise<GithubContest[]> {
   }
 
   let repos = reposBuilder.filter((it) => it.repo.name.includes("-findings"))
+  writeCache("c4Contests", repos)
+
   return repos
 }
 
-export const parseC4Findings = (
-  contest: GithubContest,
-  readme: string
-): ParseResult => {
+export const parseC4Findings = (contest: GithubContest, readme: string): ParseResult => {
   Logger.debug(`starting ${contest.repo.url}`)
 
   let findings = parse(readme)
@@ -68,15 +64,12 @@ export const parseC4Findings = (
   }
 }
 
-export const downloadC4Readme = async (
-  contest: GithubContest,
-  cache?: boolean
-) => {
+export const downloadC4Readme = async (contest: GithubContest, cache?: boolean) => {
   let readme = await downloadReadme(
     contest,
     "contents/report.md",
     (msg) => Logger.warn(msg),
-    cache ?? false
+    cache ?? false,
   )
 
   return readme
@@ -154,10 +147,7 @@ const withTagsAndName = (finding: FindingStorage) => {
 
   for (let i = 1; i < ALL_TAGS.length; ++i) {
     let tag = ALL_TAGS[i]
-    if (
-      finding.name.toLowerCase().includes(tag) ||
-      finding.content.toLowerCase().includes(tag)
-    ) {
+    if (finding.name.toLowerCase().includes(tag) || finding.content.toLowerCase().includes(tag)) {
       finding.tags?.push(tag)
     }
   }

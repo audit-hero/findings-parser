@@ -3,7 +3,11 @@ import { ALL_TAGS } from "ah-shared";
 import { githubParams, parserConfig } from "../config.js";
 import { downloadReadme, getPushTimestamp } from "../util.js";
 import { getTitleItems } from "./c4FindingsParser.util.js";
+import { getCached, writeCache } from "../cache.js";
 export async function getC4Contests() {
+    let cached = getCached("c4Contests");
+    if (cached)
+        return cached;
     // get repos which end with -findings and include report.md file
     var reposLength = 100;
     var reposBuilder = [];
@@ -26,6 +30,7 @@ export async function getC4Contests() {
         page++;
     }
     let repos = reposBuilder.filter((it) => it.repo.name.includes("-findings"));
+    writeCache("c4Contests", repos);
     return repos;
 }
 export const parseC4Findings = (contest, readme) => {
@@ -111,8 +116,7 @@ const withTagsAndName = (finding) => {
         return finding;
     for (let i = 1; i < ALL_TAGS.length; ++i) {
         let tag = ALL_TAGS[i];
-        if (finding.name.toLowerCase().includes(tag) ||
-            finding.content.toLowerCase().includes(tag)) {
+        if (finding.name.toLowerCase().includes(tag) || finding.content.toLowerCase().includes(tag)) {
             finding.tags?.push(tag);
         }
     }

@@ -3,8 +3,11 @@ import { githubParams, parserConfig } from "../config.js"
 import { FindingStorage, FindingsContest, GithubContest } from "../types.js"
 import { downloadReadme, getPushTimestamp, withTagsAndName } from "../util.js"
 import Logger from "js-logger"
+import { getCached, writeCache } from "../cache.js"
 
 export async function getSherlockContests(): Promise<GithubContest[]> {
+  let cached = getCached("sherlockContests")
+  if (cached) return cached
   var reposLength = 100
   var reposBuilder: GithubContest[] = []
   var page = 1
@@ -12,7 +15,7 @@ export async function getSherlockContests(): Promise<GithubContest[]> {
   while (reposLength == 100) {
     let resp = await fetch(
       `https://api.github.com/orgs/sherlock-audit/repos?per_page=100&page=${page}`,
-      githubParams
+      githubParams,
     )
     let repos: Repo[] = await resp.json()
 
@@ -27,7 +30,7 @@ export async function getSherlockContests(): Promise<GithubContest[]> {
           id: 0,
           name: it.name,
         }
-      })
+      }),
     )
 
     reposLength = repos.length
@@ -35,28 +38,23 @@ export async function getSherlockContests(): Promise<GithubContest[]> {
   }
 
   let repos = reposBuilder.filter((it) => it.repo.name.includes("-judging"))
-
+  writeCache("sherlockContests", repos)
+  
   return repos
 }
 
-export const downloadSherlockReadme = async (
-  contest: GithubContest,
-  cache?: boolean
-) => {
+export const downloadSherlockReadme = async (contest: GithubContest, cache?: boolean) => {
   let readme = await downloadReadme(
     contest,
     "contents/README.md",
     (msg) => Logger.warn(msg),
-    cache ?? false
+    cache ?? false,
   )
 
   return readme
 }
 
-export const parseSherlockFindings = (
-  contest: GithubContest,
-  readme: string
-) => {
+export const parseSherlockFindings = (contest: GithubContest, readme: string) => {
   Logger.debug(`starting ${contest.repo.url}`)
 
   let findings: FindingStorage[] = []
@@ -99,10 +97,7 @@ export const parseSherlockFindings = (
       if ((builder.content?.length ?? 0) < 3 && line.startsWith("Source: ")) {
         builder.url = line.split("Source:")[1].trim()
       } else {
-        if (
-          parserConfig.dontIncludeJudgeComments &&
-          line.startsWith("## Discussion")
-        )
+        if (parserConfig.dontIncludeJudgeComments && line.startsWith("## Discussion"))
           ignoreJudgeComments = true
 
         if (!ignoreJudgeComments) builder.content += `${line}\n`

@@ -2,7 +2,11 @@ import { Severity } from "ah-shared";
 import { githubParams, parserConfig } from "../config.js";
 import { downloadReadme, getPushTimestamp, withTagsAndName } from "../util.js";
 import Logger from "js-logger";
+import { getCached, writeCache } from "../cache.js";
 export async function getSherlockContests() {
+    let cached = getCached("sherlockContests");
+    if (cached)
+        return cached;
     var reposLength = 100;
     var reposBuilder = [];
     var page = 1;
@@ -24,6 +28,7 @@ export async function getSherlockContests() {
         page++;
     }
     let repos = reposBuilder.filter((it) => it.repo.name.includes("-judging"));
+    writeCache("sherlockContests", repos);
     return repos;
 }
 export const downloadSherlockReadme = async (contest, cache) => {
@@ -71,8 +76,7 @@ export const parseSherlockFindings = (contest, readme) => {
                 builder.url = line.split("Source:")[1].trim();
             }
             else {
-                if (parserConfig.dontIncludeJudgeComments &&
-                    line.startsWith("## Discussion"))
+                if (parserConfig.dontIncludeJudgeComments && line.startsWith("## Discussion"))
                     ignoreJudgeComments = true;
                 if (!ignoreJudgeComments)
                     builder.content += `${line}\n`;

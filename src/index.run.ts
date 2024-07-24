@@ -9,10 +9,10 @@ setParserConfig(
   { dontIncludeJudgeComments: true, dontParseTags: false }
 )
 
-let sherlockFindings = await getFindings(getSherlockContests, downloadSherlockReadme, parseSherlockFindings)
+// let sherlockFindings = await getFindings(getSherlockContests, downloadSherlockReadme, parseSherlockFindings)
 
-let sherlockFindingsCount = sherlockFindings.reduce((acc, it) => acc + it.findings.length, 0)
-Logger.info(`Got ${sherlockFindingsCount} findings for ${sherlockFindings.length} sherlock contests`)
+// let sherlockFindingsCount = sherlockFindings.reduce((acc, it) => acc + it.findings.length, 0)
+// Logger.info(`Got ${sherlockFindingsCount} findings for ${sherlockFindings.length} sherlock contests`)
 
 let c4findings = await getFindings(getC4Contests, downloadC4Readme, parseC4Findings)
 let c4FindingsCount = c4findings.reduce((acc, it) => acc + it.findings.length, 0)
