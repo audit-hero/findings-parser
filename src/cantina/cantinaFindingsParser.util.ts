@@ -21,7 +21,7 @@ export const getTitleItems = (
 }
 
 const cleanName = (title: string): { name: string; url?: string } => {
-  Logger.trace(`cleaning title ${title}`)
+  Logger.trace(() => `cleaning title ${title}`)
 
   let name = title,
     url

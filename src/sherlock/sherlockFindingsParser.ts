@@ -2,7 +2,7 @@ import { Repo, Severity } from "ah-shared"
 import { githubParams, parserConfig } from "../config.js"
 import { FindingStorage, FindingsContest, GithubContest } from "../types.js"
 import { downloadReadme, getPushTimestamp, withTagsAndName } from "../util.js"
-import Logger from "js-logger"
+import { Logger } from "jst-logger"
 import { getCached, writeCache } from "../cache.js"
 
 export async function getSherlockContests(): Promise<GithubContest[]> {

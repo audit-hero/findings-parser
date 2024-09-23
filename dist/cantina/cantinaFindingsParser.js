@@ -2,7 +2,7 @@ import { Logger } from "jst-logger";
 import { ALL_TAGS } from "ah-shared";
 import { githubParams, parserConfig } from "../config.js";
 import { downloadReadme, getPushTimestamp } from "../util.js";
-import { getTitleItems } from "./c4FindingsParser.util.js";
+import { getTitleItems } from "./cantinaFindingsParser.util.js";
 import { getCached, writeCache } from "../cache.js";
 export async function getC4Contests() {
     let cached = getCached("c4Contests");
@@ -34,7 +34,7 @@ export async function getC4Contests() {
     return repos;
 }
 export const parseC4Findings = (contest, readme) => {
-    Logger.debug(`starting ${contest.repo.url}`);
+    Logger.debug(() => `starting ${contest.repo.url}`);
     let findings = parse(readme);
     let findingContest = {
         c_name: contest.repo.name.replace("-findings", ""),
@@ -49,7 +49,7 @@ export const parseC4Findings = (contest, readme) => {
     };
 };
 export const downloadC4Readme = async (contest, cache) => {
-    let readme = await downloadReadme(contest, "contents/report.md", (msg) => Logger.warn(msg), cache ?? false);
+    let readme = await downloadReadme(contest, "contents/report.md", (msg) => Logger.warn(() => msg), cache ?? false);
     return readme;
 };
 const parse = (md) => {
@@ -125,4 +125,4 @@ const withTagsAndName = (finding) => {
         finding.tags = finding.tags.slice(1);
     return finding;
 };
-//# sourceMappingURL=c4FindingsParser.js.map
+//# sourceMappingURL=cantinaFindingsParser.js.map

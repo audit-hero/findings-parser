@@ -18,7 +18,7 @@ export const getTitleItems = (title) => {
     return { name, severity, url };
 };
 const cleanName = (title) => {
-    Logger.trace(`cleaning title ${title}`);
+    Logger.trace(() => `cleaning title ${title}`);
     let name = title, url;
     // remove prefix ##
     if (name.startsWith("## ")) {
@@ -60,4 +60,4 @@ const cleanName = (title) => {
     name = name.trim();
     return { name, url };
 };
-//# sourceMappingURL=c4FindingsParser.util.js.map
+//# sourceMappingURL=cantinaFindingsParser.util.js.map

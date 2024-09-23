@@ -4,7 +4,7 @@ import { githubParams, parserConfig } from "../config.js"
 import { Repo } from "ah-shared"
 import { downloadReadme, getPushTimestamp } from "../util.js"
 import { FindingStorage, FindingsContest, GithubContest, ParseResult } from "../types.js"
-import { getTitleItems } from "./c4FindingsParser.util.js"
+import { getTitleItems } from "./cantinaFindingsParser.util.js"
 import { getCached, writeCache } from "../cache.js"
 
 export async function getC4Contests(): Promise<GithubContest[]> {
@@ -46,7 +46,7 @@ export async function getC4Contests(): Promise<GithubContest[]> {
 }
 
 export const parseC4Findings = (contest: GithubContest, readme: string): ParseResult => {
-  Logger.debug(`starting ${contest.repo.url}`)
+  Logger.debug(() =>`starting ${contest.repo.url}`)
 
   let findings = parse(readme)
 
@@ -68,7 +68,7 @@ export const downloadC4Readme = async (contest: GithubContest, cache?: boolean) 
   let readme = await downloadReadme(
     contest,
     "contents/report.md",
-    (msg) => Logger.warn(msg),
+    (msg) => Logger.warn(() =>msg),
     cache ?? false,
   )
 

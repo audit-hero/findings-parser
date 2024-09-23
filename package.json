@@ -14,12 +14,19 @@
   "devDependencies": {
     "@types/node": "^20.11.17",
     "esbuild": "^0.12.5",
+    "playwright": "^1.45.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3",
     "vitest": "^1.4.0"
   },
   "dependencies": {
-    "ah-shared": "audit-hero/ah-shared#d6caf22be7d1d543100dbf60ff1929ca72729fca",
-    "js-logger": "^1.6.1"
+    "ah-shared": "audit-hero/ah-shared#52c0fea0870437daf865eefa13667a042622bd5a",
+    "chalk": "^5.3.0",
+    "fp-ts": "^2.16.6",
+    "jst-logger": "tonisives/jst-logger",
+    "logging-ts": "^0.3.4",
+    "node-html-markdown": "^1.3.0",
+    "playwright-core": "^1.45.0",
+    "ti-fptsu": "tonisives/ti-fptsu#afdddd86268b07e5548e3e0d0721b79ed0f5dea4"
   }
 }
