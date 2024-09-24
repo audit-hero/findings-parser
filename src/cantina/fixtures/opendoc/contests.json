@@ -1,0 +1,4199 @@
+{
+  "cantinaManaged": [
+    {
+      "id": "24a166ef-0910-4d89-b4f9-8932632f6b98",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "02 September 2024", "end": "02 September 2024" },
+      "title": "endgame-toolkit (updates)",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "informational", "count": 5, "fixed": 2, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_endgame_toolkit_updates_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/endgame-toolkit"],
+      "commitHashes": ["eb49fa619a30e4d67f46cbb21b2ef19705ff0554"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "cab2fa57-938a-4e56-97b0-3936203df77a",
+      "client": {
+        "name": "Drips",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/7780a53b-9ccf-42a9-181a-77b7e1d17000/public"
+      },
+      "timeline": { "start": "31 August 2024", "end": "04 September 2024" },
+      "title": "drips-contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "informational", "count": 3, "fixed": 1, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_drips_aug2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/drips-0830"],
+      "commitHashes": ["3ab49b2524b9f65590a2eb69774d2acaa33d7147"],
+      "team": [
+        {
+          "name": "high byte",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c187c74a-d7a1-4f44-5c67-3a6ea09fc500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "hananbeer",
+          "role": "sr"
+        },
+        {
+          "name": "Akshay Srivastav",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e20fb1c4-90b4-43a6-0ffa-e8a7a5612000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "AkshaySrivastav",
+          "role": "sr"
+        },
+        {
+          "name": "deadrosesxyz",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9353c511-d9e1-41d0-3356-84bbd9819400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "deadrosesxyz",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "3649b742-b081-433d-999a-b8fbc24e47d0",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "29 August 2024", "end": "30 August 2024" },
+      "title": "op-farms",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_op_farms_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/op-farms"],
+      "commitHashes": ["f71a30e52cefad3b855aa02a198b9725f9217176"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "8822194f-c1d9-4442-878d-d2fb2ef5f412",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "28 August 2024", "end": "28 August 2024" },
+      "title": "basenames PR 70 comments",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 5, "fixed": 3, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_basenames_pr_70.pdf",
+      "repoLinks": ["https://github.com/base-org/basenames"],
+      "commitHashes": ["11936e71d96abd9338a18471802848139bfe7629"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "Akshay Srivastav",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e20fb1c4-90b4-43a6-0ffa-e8a7a5612000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "AkshaySrivastav",
+          "role": "asr"
+        },
+        {
+          "name": "RustyRabbit",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c9d90fb6-569e-4d77-b6b9-69d5ea0b0c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rustyrabbit",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "3a598d54-c212-4168-acb1-b13c5a08b204",
+      "client": {
+        "name": "Marginal",
+        "website": "https://marginal.network",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/41471026-191b-4712-656d-368036e3fb00/public"
+      },
+      "timeline": { "start": "27 August 2024", "end": "03 September 2024" },
+      "title": "marginal-v1-lbp",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "medium", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "low", "count": 8, "fixed": 5, "acknowledged": 3 },
+        { "category": "informational", "count": 11, "fixed": 4, "acknowledged": 7 },
+        { "category": "gas_optimization", "count": 2, "fixed": 0, "acknowledged": 2 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_marginal_aug2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/marginal-v1-lbp"],
+      "commitHashes": ["6a000d851b5d8d84cad8ff80858ff44a15178b84"],
+      "team": [
+        {
+          "name": "secdef",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9c137f4b-4c33-46fb-315d-60d730562e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "defsec",
+          "role": "sr"
+        },
+        {
+          "name": "Jeiwan",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a5971588-d57b-42af-b187-98d97c8ee800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "jeiwan",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "985ac44f-9d23-4d24-b699-ac5cd2d63b75",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "27 August 2024", "end": "28 August 2024" },
+      "title": "op-token-bridge",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_op_token_bridge_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/op-token-bridge"],
+      "commitHashes": ["4b6cd2a362eec506bfcf295c19769a933d9a49fd"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "d0a2c704-5504-4adb-ba97-276f11f2eaab",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "25 August 2024", "end": "25 August 2024" },
+      "title": "vote-delegate (updates)",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_vote_delegate_updates_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/vote-delegate"],
+      "commitHashes": ["63700ad8724f339db0a595a612906a1c403b2069"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "3c9937ad-8874-4509-a9c1-cf8997de803b",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "24 August 2024", "end": "24 August 2024" },
+      "title": "snst (updates)",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_snst_updates_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/sdai"],
+      "commitHashes": ["3d0a270536d1adab591a1b38be8018040fbb50b2"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "fffc0fd3-c522-4d67-86eb-3467947b64d0",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "24 August 2024", "end": "24 August 2024" },
+      "title": "univ2-pool-migrator (updates)",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_univ2_pool_migrator_updates_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/univ2-pool-migrator"],
+      "commitHashes": ["106b3255e1778c524aa47281007df8b06e9d7799"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "3c0362a2-1e43-4e96-b63b-4f975e05c05a",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "23 August 2024", "end": "23 August 2024" },
+      "title": "endgame lockstate (updates)",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_endgame_updates_aug2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/lockstake"],
+      "commitHashes": ["8b16eac9a8b1bc42a720a140918c4f80d52d52c1"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "18bed847-07eb-421d-99c5-9571f2885dba",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "21 August 2024", "end": "22 August 2024" },
+      "title": "spark-psm",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "informational", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_spark_psm_aug2024.pdf",
+      "repoLinks": ["https://github.com/marsfoundation/spark-psm"],
+      "commitHashes": ["fcde70934e99d8fb446d027c46655fd5cd47cde4"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "0e045ab1-c6ba-4b16-b693-cd42c318a16a",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "20 August 2024", "end": "20 August 2024" },
+      "title": "xchain-dsr-oracle",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "informational", "count": 5, "fixed": 4, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_xchain_dsr_oracle_aug2024.pdf",
+      "repoLinks": ["https://github.com/marsfoundation/xchain-dsr-oracle"],
+      "commitHashes": ["000e4fd0c4b0f327e2ca49c7c547e29af00146da"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "854c4127-0cdc-4712-be6b-60d0c01f1a54",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "19 August 2024", "end": "19 August 2024" },
+      "title": "xchain-helpers; spark-gov-relay",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 7, "fixed": 5, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_xchain_helpers_spark_gov_relay_aug2024.pdf",
+      "repoLinks": [
+        "https://github.com/marsfoundation/xchain-helpers",
+        "https://github.com/marsfoundation/spark-gov-relay"
+      ],
+      "commitHashes": [
+        "07e27b6eebb985b0c1e3376329c02b29d49664f7",
+        "38da91295eb322ce052d9b0937191289005b5ed7"
+      ],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "9e68c9e9-536c-4ba1-9f4c-8daeef8fb966",
+      "client": {
+        "name": "Drips",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/7780a53b-9ccf-42a9-181a-77b7e1d17000/public"
+      },
+      "timeline": { "start": "23 July 2024", "end": "26 July 2024" },
+      "title": "drips-monorepo",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_drips_jul2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/drips-monorepo"],
+      "commitHashes": ["78ce9efb8bfebcc535c9012a8ab62ec793da4e43"],
+      "team": [
+        {
+          "name": "Sujith Somraaj",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/caec54f1-e407-4394-f248-bc4f7e2db300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "sujithsomraaj",
+          "role": "sr"
+        },
+        {
+          "name": "J4X",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/db6c8dac-b552-40bb-0113-230e937bc400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "J4X98",
+          "role": "asr"
+        },
+        {
+          "name": "deadrosesxyz",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9353c511-d9e1-41d0-3356-84bbd9819400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "deadrosesxyz",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "f2a4a72a-2d34-4291-ab78-fcd288ff05f9",
+      "client": {
+        "name": "Layer N",
+        "website": "https://nullstudios.xyz",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/75aa0b3c-534b-4111-573d-0ec7c025e000/public"
+      },
+      "timeline": { "start": "22 July 2024", "end": "06 August 2024" },
+      "title": "nord-contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 6, "fixed": 4, "acknowledged": 2 },
+        { "category": "informational", "count": 7, "fixed": 4, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 3, "fixed": 0, "acknowledged": 3 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_layern_jul2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/nord"],
+      "commitHashes": ["4a4625b08dafb0ec819c320a9c4c7afdde69793b"],
+      "team": [
+        {
+          "name": "slowfi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6d8a1e08-4ae9-4341-ab1e-025e43486800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "slowfi",
+          "role": "sr"
+        },
+        {
+          "name": "carrotsmuggler",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/f01bf5d6-f064-48ae-70af-176d93531100/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "carrotsmuggler",
+          "role": "asr"
+        },
+        {
+          "name": "Optimum",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/131bee35-9c40-438c-2962-80aeeae2d000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "optimumsec",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "5295cf96-7a54-4150-9d94-396944b3604e",
+      "client": {
+        "name": "Wonderland",
+        "website": "https://defi.sucks/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6829494b-6c5e-4ebc-89f2-958a8a5c8f00/public"
+      },
+      "timeline": { "start": "14 July 2024", "end": "19 July 2024" },
+      "title": "defi-wonderland-opUSDC",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "low", "count": 5, "fixed": 5, "acknowledged": 0 },
+        { "category": "informational", "count": 13, "fixed": 9, "acknowledged": 4 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_wonderland_jul2024.pdf",
+      "repoLinks": ["https://github.com/defi-wonderland/opUSDC/"],
+      "commitHashes": ["b568e71dd80df7150ade82892b40b43b55a89a9d"],
+      "team": [
+        {
+          "name": "r0bert",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ae39234a-10f1-484c-5a7d-03bc11871000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "r0bert",
+          "role": "sr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "0xicingdeath",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9ea05d13-797f-4f81-be3d-5123c3eb5800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xicingdeath",
+          "role": "lsr"
+        },
+        {
+          "name": "Optimum",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/131bee35-9c40-438c-2962-80aeeae2d000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "optimumsec",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "4ff1e282-3e2e-4ebb-8476-68fe28aa0eee",
+      "client": {
+        "name": "Ondefy ",
+        "website": "https://www.zyfi.org/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8e34b037-f541-4c39-ef89-b013120cd100/public"
+      },
+      "timeline": { "start": "27 June 2024", "end": "02 July 2024" },
+      "title": "permissionless-multisigner-paymaster",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 4, "fixed": 4, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_zyfi_jun2024.pdf",
+      "repoLinks": [
+        "https://github.com/cantina-forks/ondefy-permissionless-multisigner-paymaster",
+        "https://github.com/cantina-forks/ondefy-permissionless-multisigner-paymaster"
+      ],
+      "commitHashes": [
+        "29943abad535dc6359c24f0e60c3f5e84812b27e",
+        "86d0a6b1a3b12d5839766b91b66ff2fd733b0977"
+      ],
+      "team": [
+        {
+          "name": "chris",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/b651e98a-3e96-4717-6de1-ca586e784d00/public",
+          "verified": false,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "chris",
+          "role": "sr"
+        },
+        {
+          "name": "deadrosesxyz",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9353c511-d9e1-41d0-3356-84bbd9819400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "deadrosesxyz",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "65cd62a8-c178-436f-a658-549c8752b460",
+      "client": {
+        "name": "Sablier",
+        "website": "https://sablier.com",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/89eceb29-10be-4d60-5334-e58e94f8e200/public"
+      },
+      "timeline": { "start": "26 June 2024", "end": "28 June 2024" },
+      "title": "v2core-v2 periphery-pr",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "informational", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_sablier_jun2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/sablier-v2core-periphery"],
+      "commitHashes": ["a8b2a1ff6806b81ead5d6f3cb072fbac94dabaae"],
+      "team": [
+        {
+          "name": "RustyRabbit",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c9d90fb6-569e-4d77-b6b9-69d5ea0b0c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rustyrabbit",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "e78d74a1-29af-49f8-9674-990eaeb6c9f2",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "24 June 2024", "end": "28 June 2024" },
+      "title": "arbitrum-token-bridge",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 11, "fixed": 5, "acknowledged": 6 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_arbitrum-token-bridge_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/arbitrum-token-bridge"],
+      "commitHashes": ["6248966bd8dac6261fb296f9743a0b9432cfec71"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "131241f5-7399-476e-acd1-dc57c8f00e39",
+      "client": {
+        "name": "Level",
+        "website": "https://level.money",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32ee8912-d903-46b3-bc7c-246240a30800/public"
+      },
+      "timeline": { "start": "24 June 2024", "end": "27 June 2024" },
+      "title": "contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "low", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "informational", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_level_jun2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/Level-Money-contracts"],
+      "commitHashes": ["e920c0681701279ed2eccd7628b767a37ac34073"],
+      "team": [
+        {
+          "name": "tchkvsky",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/0fe6a039-9159-4b68-30b9-72f9e48f5400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "TCHKVSKY",
+          "role": "jsr"
+        },
+        {
+          "name": "phaze",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/acb03521-4522-4b3c-3f4e-9b6ed83e5b00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "phaze",
+          "role": "sr"
+        },
+        {
+          "name": "Delvir0",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ac01ae9b-74fc-4665-df02-33f764928800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Delvir0",
+          "role": "jsr"
+        },
+        {
+          "name": "MiloTruck",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/557c154e-34be-4ef8-cefc-418613c82b00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "milotruck",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "6563a8d7-2cbb-4cb1-8e88-78b71c045431",
+      "client": {
+        "name": "Clave",
+        "website": "https://getclave.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2819dee4-3bef-4b8f-6ab2-84e275336900/public"
+      },
+      "timeline": { "start": "21 June 2024", "end": "25 June 2024" },
+      "title": "scribe",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "informational", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_clave_jun2024.pdf",
+      "repoLinks": ["https://github.com/getclave/clave-monorepo"],
+      "commitHashes": ["1790faf473b99da0260e415ea09dc80e3a564992"],
+      "team": [
+        {
+          "name": "GiuseppeDeLaZara",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/da22b044-64a5-4019-7a33-97d5f96a7f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "GiuseppeDeLaZara",
+          "role": "asr"
+        },
+        {
+          "name": "Blockdev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09a28a57-e9d9-45fe-b465-6fff31f22200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xbok",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "9cff4d7b-b94c-4708-860e-f63f38e21148",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "17 June 2024", "end": "21 June 2024" },
+      "title": "sdai snst",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "informational", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_snst_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/sdai"],
+      "commitHashes": ["47bfad404140e6c0ab0c5867b3f8345eac4e7556"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "65fd546e-c95a-4b24-a6ed-86ea564e7113",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "13 June 2024", "end": "14 June 2024" },
+      "title": "nst upgrades",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_nst_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/nst"],
+      "commitHashes": ["b7a5dece9c24fb431352470eb2f04b3ee598ebd8"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "cf6f801f-5c05-488c-a387-3836606600e7",
+      "client": {
+        "name": "Centrifuge",
+        "website": "https://centrifuge.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/76314f6e-4bf5-4007-ccb9-7827c362fd00/public"
+      },
+      "timeline": { "start": "12 June 2024", "end": "12 June 2024" },
+      "title": "PermissionedUSDCWrapper.sol",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_centrifuge_jun2024.pdf",
+      "repoLinks": ["https://github.com/centrifuge/morpho-market"],
+      "commitHashes": ["e0a9287eb2781b663da732585614ce4328971f6e"],
+      "team": [
+        {
+          "name": "cccz",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5e6d378-e0c9-47e8-66eb-fba7e9ce9700/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "thereksfour",
+          "role": "sr"
+        },
+        {
+          "name": "0xRajeev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d58ff1c0-3b4d-4ddc-fd62-57e6cb141500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xRajeev",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "d534a359-21d8-4227-9fce-5c9eb920a562",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "12 June 2024", "end": "12 June 2024" },
+      "title": "univ2-pool-migrator",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_univ2-pool-migrator_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/univ2-pool-migrator"],
+      "commitHashes": ["106b3255e1778c524aa47281007df8b06e9d7799"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "39a7ac51-967a-4ca7-bfd9-f8ddd6717c97",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "05 June 2024", "end": "11 June 2024" },
+      "title": "dss-flappers",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 2, "fixed": 0, "acknowledged": 2 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_dss-flappers_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/dss-flappers"],
+      "commitHashes": ["4b0cb1f50950f770364ffd5cadeab45c6a1d2507"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "7aa51abc-eac3-4dae-ad66-caa16fe8f393",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "31 May 2024", "end": "04 June 2024" },
+      "title": "vote-delegate",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_vote-delegate_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/vote-delegate"],
+      "commitHashes": ["d6e563f4288601255535eaa4f4b307d782908f1e"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "c44dcd35-a8c7-446d-9e99-95a57974a979",
+      "client": {
+        "name": "Omni X",
+        "website": "https://omni-x.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9e2b5c1c-1e67-4127-d235-551812207400/public"
+      },
+      "timeline": { "start": "31 May 2024", "end": "03 June 2024" },
+      "title": "omnix-multisender",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 2, "acknowledged": 1 },
+        { "category": "informational", "count": 11, "fixed": 8, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 7, "fixed": 7, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_omnix_jun2024.pdf",
+      "repoLinks": ["https://github.com/Omni-X-NFT/omnix-multisender"],
+      "commitHashes": ["b1212ed520e6e3d509c78a1c52fdff26a0357f4f"],
+      "team": [
+        {
+          "name": "Sujith Somraaj",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/caec54f1-e407-4394-f248-bc4f7e2db300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "sujithsomraaj",
+          "role": "sr"
+        },
+        {
+          "name": "Denis Miličević",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d8035d4f-f432-4afe-d2f9-6451282c7000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "D-Nice",
+          "role": "lsr"
+        },
+        {
+          "name": "Emile Baizel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6a1c78c3-f65e-47a2-0501-3affebf53300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "ebaizel",
+          "role": "jsr"
+        }
+      ]
+    },
+    {
+      "id": "a0a3ffd3-bbf0-457b-aad8-2f01424ebda2",
+      "client": {
+        "name": "Trugly Labs",
+        "website": "https://www.trugly.meme",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2bd7d567-558a-4ce4-ad88-10cfd80b4000/public"
+      },
+      "timeline": { "start": "29 May 2024", "end": "06 June 2024" },
+      "title": "contracts-v1",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 4, "fixed": 2, "acknowledged": 2 },
+        { "category": "low", "count": 11, "fixed": 6, "acknowledged": 5 },
+        { "category": "informational", "count": 7, "fixed": 4, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_managed_trugly_jun2024.pdf",
+      "repoLinks": ["https://github.com/trugly-labs/contracts-v1"],
+      "commitHashes": ["4f06e16f988dc9c86ab2af54628d691b450f1921"],
+      "team": [
+        {
+          "name": "slowfi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6d8a1e08-4ae9-4341-ab1e-025e43486800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "slowfi",
+          "role": "sr"
+        },
+        {
+          "name": "Jonatas Martins",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32a128c7-503e-4190-9228-7eaa09507100/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "jonatascm",
+          "role": "asr"
+        }
+      ]
+    },
+    {
+      "id": "0ab48a3e-6978-44e4-a6a7-67de330c70c0",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "20 May 2024", "end": "30 May 2024" },
+      "title": "lockstate",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 10, "fixed": 7, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 3, "fixed": 0, "acknowledged": 3 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_may2024.pdf",
+      "repoLinks": ["https://github.com/makerdao/lockstate"],
+      "commitHashes": ["735e1e85ca706534a77d8e1582df0d3248cbd2b6"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "28efed32-c673-470b-9681-d3764088109f",
+      "client": {
+        "name": "Chateau Capital",
+        "website": "https://www.chateau.capital",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/51fa423d-10ef-4fe3-1246-9132bbffb400/public"
+      },
+      "timeline": { "start": "26 April 2024", "end": "01 May 2024" },
+      "title": "PR 7540",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 3, "fixed": 1, "acknowledged": 2 },
+        { "category": "low", "count": 3, "fixed": 1, "acknowledged": 2 },
+        { "category": "informational", "count": 18, "fixed": 0, "acknowledged": 18 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_chateau_apr2024.pdf",
+      "repoLinks": ["https://github.com/chateau-capital/ca"],
+      "commitHashes": ["cdf79ee101b6f92226663e4afd0bef770eb050f7"],
+      "team": [
+        {
+          "name": "high byte",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c187c74a-d7a1-4f44-5c67-3a6ea09fc500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "hananbeer",
+          "role": "sr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "ebb8649e-6999-4e9e-b6ab-e823ae9c47ff",
+      "client": {
+        "name": "Sablier",
+        "website": "https://sablier.com",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/89eceb29-10be-4d60-5334-e58e94f8e200/public"
+      },
+      "timeline": { "start": "15 April 2024", "end": "03 May 2024" },
+      "title": "sablier-v2",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 8, "fixed": 3, "acknowledged": 5 },
+        { "category": "low", "count": 3, "fixed": 1, "acknowledged": 2 },
+        { "category": "informational", "count": 3, "fixed": 1, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_sablier_apr2024.pdf",
+      "repoLinks": [
+        "https://github.com/sablier-labs/v2-core",
+        "https://github.com/sablier-labs/v2-periphery",
+        "https://github.com/sablier-labs/v2-core"
+      ],
+      "commitHashes": [
+        "a86edeeecb57a2ba2e6fb5a4a4049e62f0b8f2a6",
+        "73831c7dcaa5ec4e2fed6caa0f8040154e53030a",
+        "9280d98d31f0f917f7f1799ce8a27d767bfe3a11"
+      ],
+      "team": [
+        {
+          "name": "RustyRabbit",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c9d90fb6-569e-4d77-b6b9-69d5ea0b0c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rustyrabbit",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "01f02cc2-24b9-4eee-b6f6-f924d6beee26",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "15 April 2024", "end": "19 April 2024" },
+      "title": "smart-wallet",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 5, "fixed": 2, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 2, "fixed": 2, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_smartwallet_apr2024.pdf",
+      "repoLinks": ["https://github.com/coinbase/smart-wallet/"],
+      "commitHashes": ["9edcf7f174c3ebef100a4400e6a17c746ea521a4"],
+      "team": [
+        {
+          "name": "secdef",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9c137f4b-4c33-46fb-315d-60d730562e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "defsec",
+          "role": "sr"
+        },
+        {
+          "name": "Optimum",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/131bee35-9c40-438c-2962-80aeeae2d000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "optimumsec",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "72dfcce6-8b1b-4f5d-b5a7-657a40507b10",
+      "client": {
+        "name": "Mellow",
+        "website": "https://mellow.finance/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ccd0591c-a4a3-4ff7-7464-1c940509c700/public"
+      },
+      "timeline": { "start": "08 April 2024", "end": "19 April 2024" },
+      "title": "mellow-alm-toolkit",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 8, "fixed": 8, "acknowledged": 0 },
+        { "category": "low", "count": 19, "fixed": 12, "acknowledged": 7 },
+        { "category": "informational", "count": 10, "fixed": 6, "acknowledged": 4 },
+        { "category": "gas_optimization", "count": 4, "fixed": 2, "acknowledged": 2 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_mellow_apr2024.pdf",
+      "repoLinks": ["https://github.com/mellow-finance/mellow-alm-toolkit"],
+      "commitHashes": ["8413fc09a73d2f9e09c9c2706a78d4cdc3a136b3"],
+      "team": [
+        {
+          "name": "Akshay Srivastav",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e20fb1c4-90b4-43a6-0ffa-e8a7a5612000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "AkshaySrivastav",
+          "role": "asr"
+        },
+        {
+          "name": "Kaden",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3c22b609-2b3e-43f6-3010-95b4cfbfa200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xkaden",
+          "role": "sr"
+        },
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        },
+        {
+          "name": "deadrosesxyz",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9353c511-d9e1-41d0-3356-84bbd9819400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "deadrosesxyz",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "aa79aa69-8468-442d-bfbb-b403de36edec",
+      "client": {
+        "name": "GovNFT",
+        "website": "https://govnft.eth.limo",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ca212cd5-9f2f-450b-b183-ae1001f42600/public"
+      },
+      "timeline": { "start": "03 April 2024", "end": "08 April 2024" },
+      "title": "contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "low", "count": 7, "fixed": 6, "acknowledged": 1 },
+        { "category": "informational", "count": 8, "fixed": 4, "acknowledged": 4 },
+        { "category": "gas_optimization", "count": 4, "fixed": 3, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_velodrome_apr2024.pdf",
+      "repoLinks": ["https://github.com/GovNFT/contracts"],
+      "commitHashes": ["b6d277405b5dc09cf3d319fef7e35c16554c5658"],
+      "team": [
+        {
+          "name": "Denis Miličević",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d8035d4f-f432-4afe-d2f9-6451282c7000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "D-Nice",
+          "role": "lsr"
+        },
+        {
+          "name": "Kaden",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3c22b609-2b3e-43f6-3010-95b4cfbfa200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xkaden",
+          "role": "sr"
+        },
+        {
+          "name": "brianmcmichael",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9c46e72a-5b38-4f15-bfa8-ffc3bf28c700/public",
+          "verified": false,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "brianmcmichael",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "abbf1e84-533e-4f57-aa47-858a4e6f4581",
+      "client": {
+        "name": "Superform",
+        "website": "https://superform.xyz",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c5294bdc-6a2a-43b5-852b-4f1ad9af3200/public"
+      },
+      "timeline": { "start": "25 March 2024", "end": "25 March 2024" },
+      "title": "superrewards-contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "informational", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_superform_mar2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/superform-superrewards-contracts"],
+      "commitHashes": ["8f4278acc641d6c45d7e9f4114fc0298da0d33c0"],
+      "team": [
+        {
+          "name": "secdef",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9c137f4b-4c33-46fb-315d-60d730562e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "defsec",
+          "role": "sr"
+        },
+        {
+          "name": "high byte",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c187c74a-d7a1-4f44-5c67-3a6ea09fc500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "hananbeer",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "b12ff6a1-673f-45d0-8066-4a8e21a361eb",
+      "client": {
+        "name": "Clave",
+        "website": "https://getclave.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2819dee4-3bef-4b8f-6ab2-84e275336900/public"
+      },
+      "timeline": { "start": "21 February 2024", "end": "27 February 2024" },
+      "title": "clave-contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "low", "count": 5, "fixed": 5, "acknowledged": 0 },
+        { "category": "informational", "count": 6, "fixed": 6, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 2, "fixed": 2, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_clave_feb2024.pdf",
+      "repoLinks": ["https://github.com/getclave/clave-contracts"],
+      "commitHashes": ["4bb00991174afd27d538cc0ace14e0acb33058ea"],
+      "team": [
+        {
+          "name": "Blockdev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09a28a57-e9d9-45fe-b465-6fff31f22200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xbok",
+          "role": "sr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "45efc68c-e431-4f04-a3ff-f44b2cc65548",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "19 February 2024", "end": "23 February 2024" },
+      "title": "morpho-blue-oracles",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_morpho_oracles_feb2024.pdf",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue-oracles"],
+      "commitHashes": ["af1a0d305071bbdcb38f1b7b128ba6d0c9f31684"],
+      "team": [
+        {
+          "name": "Jonah Wu",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c3d860e6-f94a-42c2-bbc8-1689b87f7e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Jonah246",
+          "role": "lsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "59484899-cf9c-454e-842c-c3d13e5dcac5",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "19 February 2024", "end": "23 February 2024" },
+      "title": "morpho-blue-bundlers",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_morpho_blue_bundlers_feb2024.pdf",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue-bundlers"],
+      "commitHashes": ["26fcc30fbab12eb5927bc74d0117eb81669245a6"],
+      "team": [
+        {
+          "name": "Jonah Wu",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c3d860e6-f94a-42c2-bbc8-1689b87f7e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Jonah246",
+          "role": "lsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "7acb12f1-b9f5-4a9e-9e5d-104cea948ae5",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "19 February 2024", "end": "23 February 2024" },
+      "title": "morpho-blue-irm",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_morpho_blue_irm_feb2024.pdf",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue-irm"],
+      "commitHashes": ["23259f8893af594d000aed9608463ef4d365ae0b"],
+      "team": [
+        {
+          "name": "Jonah Wu",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c3d860e6-f94a-42c2-bbc8-1689b87f7e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Jonah246",
+          "role": "lsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "84fb1c99-31ff-4327-9fd4-eeee6cf59ef9",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "19 February 2024", "end": "23 February 2024" },
+      "title": "public-allocator",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 4, "fixed": 2, "acknowledged": 2 },
+        { "category": "informational", "count": 7, "fixed": 5, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_morpho_public_allocator_feb2024.pdf",
+      "repoLinks": ["https://github.com/morpho-org/public-allocator"],
+      "commitHashes": ["1cdcee8d55858f56810cde5f70c077dfb0e06e0b"],
+      "team": [
+        {
+          "name": "Jonah Wu",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c3d860e6-f94a-42c2-bbc8-1689b87f7e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Jonah246",
+          "role": "lsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "c32cfcdb-e602-44bf-a16c-ca6dd217673e",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "19 February 2024", "end": "23 February 2024" },
+      "title": "morpho-blue-oracles adapters",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 4, "fixed": 4, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_morpho_blue_oracles_adapters_feb2024.pdf",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue-oracles"],
+      "commitHashes": ["d21e940374728b731d381c4741522500d390422d"],
+      "team": [
+        {
+          "name": "Jonah Wu",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c3d860e6-f94a-42c2-bbc8-1689b87f7e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Jonah246",
+          "role": "lsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "7cb70b9d-62b1-48c3-9b28-a9eb95d2dc40",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "14 February 2024", "end": "19 February 2024" },
+      "title": "magic-spend",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_magicspend_feb2024.pdf",
+      "repoLinks": ["https://github.com/base-org/magic-spend"],
+      "commitHashes": ["01a439d02ae0d645a6059f1e4c8943029ff024e8"],
+      "team": [
+        {
+          "name": "RustyRabbit",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c9d90fb6-569e-4d77-b6b9-69d5ea0b0c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rustyrabbit",
+          "role": "asr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "abc22799-0dd9-4a85-b9e8-5563338b9ed7",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "14 February 2024", "end": "19 February 2024" },
+      "title": "Webauthn.sol",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "informational", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_webauthn_feb2024.pdf",
+      "repoLinks": ["https://github.com/base-org/smart-account"],
+      "commitHashes": ["2d86e4c4c8c45491264c29257415d7607736af3c"],
+      "team": [
+        {
+          "name": "RustyRabbit",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c9d90fb6-569e-4d77-b6b9-69d5ea0b0c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rustyrabbit",
+          "role": "asr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "4a8b6b29-d372-427d-a524-b83ec1673353",
+      "client": {
+        "name": "Ondefy ",
+        "website": "https://www.zyfi.org/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8e34b037-f541-4c39-ef89-b013120cd100/public"
+      },
+      "timeline": { "start": "12 February 2024", "end": "13 February 2024" },
+      "title": "zyfi-paymaster",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 2, "acknowledged": 1 },
+        { "category": "informational", "count": 5, "fixed": 2, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_zyfi_feb2024.pdf",
+      "repoLinks": ["https://github.com/ondefy/zyfi-paymaster"],
+      "commitHashes": ["e38bf16a53e9750f1bd74aa7cfb599fe8aa4f46d"],
+      "team": [
+        {
+          "name": "chris",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/b651e98a-3e96-4717-6de1-ca586e784d00/public",
+          "verified": false,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "chris",
+          "role": "sr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "c185d7eb-d80b-49d4-8141-44e122c6fee4",
+      "client": {
+        "name": "Optimism",
+        "website": "https://optimism.mirror.xyz/gQWKlrDqHzdKPsB1iUnI-cVN3v0NvsWnazK7ajlt1fI",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2936d4c6-fa1a-4d6a-7c8b-c8405f973f00/public"
+      },
+      "timeline": { "start": "22 January 2024", "end": "05 February 2024" },
+      "title": "cycle 19",
+      "scope": "packages contracts-bedrock src EAS",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 7, "fixed": 0, "acknowledged": 7 },
+        { "category": "informational", "count": 7, "fixed": 0, "acknowledged": 7 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_optimism_feb2024.pdf",
+      "repoLinks": ["https://github.com/ethereum-optimism/optimism"],
+      "commitHashes": ["e6ef3a900c42c8722e72c2e2314027f85d12ced5"],
+      "team": [
+        {
+          "name": "cccz",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5e6d378-e0c9-47e8-66eb-fba7e9ce9700/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "thereksfour",
+          "role": "sr"
+        },
+        {
+          "name": "Christos Pap",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3913b6a8-7215-4b2c-98e4-106891566400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "christos-eth",
+          "role": "asr"
+        },
+        {
+          "name": "Jeiwan",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a5971588-d57b-42af-b187-98d97c8ee800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "jeiwan",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "e6305fa7-4cd2-46a2-b787-428b501aeabd",
+      "client": {
+        "name": "Velodrome Finance",
+        "website": "https://app.velodrome.finance",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d382e2cc-f9a5-4296-ea70-1aa48af32900/public"
+      },
+      "timeline": { "start": "18 January 2024", "end": "19 January 2024" },
+      "title": "govnft-contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "informational", "count": 7, "fixed": 0, "acknowledged": 7 },
+        { "category": "gas_optimization", "count": 5, "fixed": 0, "acknowledged": 5 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cantina.xyz/portfolio/e6305fa7-4cd2-46a2-b787-428b501aeabd",
+      "repoLinks": ["https://github.com/velodrome-finance/govnft-contracts"],
+      "commitHashes": ["03bfe7b1392d24895d815e03700e5f4842402c9b"],
+      "team": [
+        {
+          "name": "Denis Miličević",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d8035d4f-f432-4afe-d2f9-6451282c7000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "D-Nice",
+          "role": "lsr"
+        },
+        {
+          "name": "gmhacker",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/753656d2-b3c7-42de-4a96-e09fe7b30600/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "gmhacker",
+          "role": "asr"
+        }
+      ]
+    },
+    {
+      "id": "5721769e-45ca-48b3-8215-d662150ba00f",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "11 December 2023", "end": "13 December 2023" },
+      "title": "paymaster\nsmart-account",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 5, "fixed": 5, "acknowledged": 0 },
+        { "category": "informational", "count": 7, "fixed": 5, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 3, "fixed": 3, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_dec2023.pdf",
+      "repoLinks": [
+        "https://github.com/base-org/paymaster",
+        "https://github.com/base-org/smart-account"
+      ],
+      "commitHashes": [
+        "67b44ad1a4e172b2b29c52da8f60e06edd210b31",
+        "2779bed41abb5c0f4246268b11b0a7335410ad00"
+      ],
+      "team": [
+        {
+          "name": "Blockdev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09a28a57-e9d9-45fe-b465-6fff31f22200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xbok",
+          "role": "sr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "22f54f40-08c3-493d-bc26-04e01f84f37a",
+      "client": {
+        "name": "Y2K Finance",
+        "website": "https://y2k.finance",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ca2733ca-ecf0-4411-aec5-c40608734d00/public"
+      },
+      "timeline": { "start": "18 November 2023", "end": "01 December 2023" },
+      "title": "vl-Y2Kv2",
+      "scope": " ",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "high", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "medium", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "low", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "informational", "count": 5, "fixed": 0, "acknowledged": 5 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cantina.xyz/",
+      "repoLinks": ["https://github.com/Y2K-Finance/vl-Y2Kv2"],
+      "commitHashes": ["6b9ac57514598f5fe09e905300c2a1c0590924bd"],
+      "team": [
+        {
+          "name": "0xWeiss",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/321331e4-350e-4943-0a9e-f65a28b24900/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xweiss",
+          "role": "asr"
+        },
+        {
+          "name": "Zach Obront",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/db46759c-e1bf-4bae-66e1-7d4e959ec500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "zobront",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "f8041194-4019-475e-95cd-9ca3e5d73447",
+      "client": {
+        "name": "Sushi",
+        "website": "https://sushi.com",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/4245c26e-be8e-421b-ac7f-ae6b968f1f00/public"
+      },
+      "timeline": { "start": "13 November 2023", "end": "17 November 2023" },
+      "title": "sushiswap RouteProcessor4.sol",
+      "scope": "RouteProcessor4.sol",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "low", "count": 4, "fixed": 2, "acknowledged": 2 },
+        { "category": "informational", "count": 17, "fixed": 8, "acknowledged": 9 },
+        { "category": "gas_optimization", "count": 2, "fixed": 1, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_sushiswap_nov2023.pdf",
+      "repoLinks": ["https://github.com/sushiswap/sushiswap"],
+      "commitHashes": ["89babd242db106279e367f1558828a3c4f7423f1"],
+      "team": [
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        },
+        {
+          "name": "MiloTruck",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/557c154e-34be-4ef8-cefc-418613c82b00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "milotruck",
+          "role": "asr"
+        }
+      ]
+    },
+    {
+      "id": "d3ba51dd-e2ef-41fe-a33f-7da5573256e6",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "02 November 2023", "end": "03 November 2023" },
+      "title": "erc20-helpers upgradeable-proxy",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "informational", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_nov2023.pdf",
+      "repoLinks": [
+        "https://github.com/marsfoundation/erc20-helpers",
+        "https://github.com/marsfoundation/upgradeable-proxy"
+      ],
+      "commitHashes": [
+        "8fe5ef3e85ea9ca5bc19df7f6ae605bc848647cc",
+        "885de5b47aee6a2b492099d163b3e394eb53f852"
+      ],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "7ca79692-5e77-4485-92e3-927c6870855a",
+      "client": {
+        "name": "Clave",
+        "website": "https://getclave.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2819dee4-3bef-4b8f-6ab2-84e275336900/public"
+      },
+      "timeline": { "start": "01 November 2023", "end": "15 November 2023" },
+      "title": "clave-monorepo",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "medium", "count": 4, "fixed": 4, "acknowledged": 0 },
+        { "category": "low", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "informational", "count": 10, "fixed": 10, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 3, "fixed": 3, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_clave_nov2023.pdf",
+      "repoLinks": ["https://github.com/getclave/clave-monorepo"],
+      "commitHashes": ["bbaabc87375637661a163c22b7298335c13a4c35"],
+      "team": [
+        {
+          "name": "Blockdev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09a28a57-e9d9-45fe-b465-6fff31f22200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xbok",
+          "role": "sr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "a8559fe2-c6e1-4f2f-b159-0f354843a666",
+      "client": {
+        "name": "DFlow",
+        "website": "https://dflow.net",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/5a4c393c-05c5-4cd5-5e82-0c522b9bca00/public"
+      },
+      "timeline": { "start": "30 October 2023", "end": "08 November 2023" },
+      "title": "evm-contracts",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_dflow_nov2023.pdf",
+      "repoLinks": ["https://github.com/DFlowProtocol/evm-contracts"],
+      "commitHashes": ["1d5402fe8abb60912bbe403d496993e15422b1fb"],
+      "team": [
+        {
+          "name": "RustyRabbit",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c9d90fb6-569e-4d77-b6b9-69d5ea0b0c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rustyrabbit",
+          "role": "sr"
+        },
+        {
+          "name": "Kurt Barry",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/53a5d2e6-c297-4b1c-2bef-3a45c0314800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "kmbarry1",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "e0617560-04c7-4591-8e64-31c642408403",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "30 October 2023", "end": "03 November 2023" },
+      "title": "coinbase-commerce-transfers",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "low", "count": 6, "fixed": 4, "acknowledged": 2 },
+        { "category": "informational", "count": 5, "fixed": 3, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 2, "fixed": 2, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_nov2023.pdf",
+      "repoLinks": ["https://github.com/coinbase/commerce-transfers-audit"],
+      "commitHashes": ["d73be39143d609aa7a2c7209df2aad9af4453ca7"],
+      "team": [
+        {
+          "name": "Liam Eastwood",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/b1f3fd24-fda2-4753-74e0-03dab2d5b400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xleastwood",
+          "role": "lsr"
+        },
+        {
+          "name": "Anurag Jain",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/cbd7c237-9593-4c47-14fe-b20549374500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "csanuragjain",
+          "role": "sr"
+        },
+        {
+          "name": "Jonatas Martins",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32a128c7-503e-4190-9228-7eaa09507100/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "jonatascm",
+          "role": "asr"
+        }
+      ]
+    },
+    {
+      "id": "5c55f883-124f-42f9-8315-f8bb0d5c2da9",
+      "client": {
+        "name": "Chronicle Labs",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d128e8fe-92a5-4e01-2f6f-a5e4281dea00/public"
+      },
+      "timeline": { "start": "27 October 2023", "end": "02 November 2023" },
+      "title": "scribe",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 1, "acknowledged": 2 },
+        { "category": "informational", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_chronicle_oct2023.pdf",
+      "repoLinks": ["https://github.com/chronicleprotocol/scribe"],
+      "commitHashes": ["c508c23d26e8d57ada14af77c3211f3171043f71"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "f2f052d8-edfb-496f-9014-98a1bc8cadb8",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "25 October 2023", "end": "27 October 2023" },
+      "title": "Base paymaster",
+      "scope": " ",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 7, "fixed": 6, "acknowledged": 1 },
+        { "category": "informational", "count": 14, "fixed": 7, "acknowledged": 7 },
+        { "category": "gas_optimization", "count": 4, "fixed": 4, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_coinbase_oct2023.pdf",
+      "repoLinks": ["https://github.com/base-org/paymaster"],
+      "commitHashes": ["08612ce45ff674630bddf1e5bf330fd360bf1059"],
+      "team": [
+        {
+          "name": "chris",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/b651e98a-3e96-4717-6de1-ca586e784d00/public",
+          "verified": false,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "chris",
+          "role": "sr"
+        },
+        {
+          "name": "Denis Miličević",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d8035d4f-f432-4afe-d2f9-6451282c7000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "D-Nice",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "53e12fbd-182a-45f9-a115-55fdea33c5c4",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "19 October 2023", "end": "25 October 2023" },
+      "title": "dss-lite-psm",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "informational", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_dss-lite-psm_oct2023.pdf",
+      "repoLinks": ["https://github.com/makerdao/dss-lite-psm"],
+      "commitHashes": ["3ec57f35fdd910ab765379c324a4dc2a7c08d54a"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "d840cb63-0686-4cb0-865d-d07a5b9b7f10",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "17 October 2023", "end": "18 October 2023" },
+      "title": "dss-conduits",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_dssconduit_oct2023.pdf",
+      "repoLinks": ["https://github.com/makerdao/dss-conduits"],
+      "commitHashes": ["b8b3dac34d307ce1e9f976b4c17457fefa6e2ed4"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "b3a172b2-f80b-4240-935a-75d6b49d0910",
+      "client": {
+        "name": "Ethena",
+        "website": "https://ethena.fi",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c531b9c8-2c4f-41b7-0014-ba581eab6100/public"
+      },
+      "timeline": { "start": "16 October 2023", "end": "20 October 2023" },
+      "title": "ethena",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "informational", "count": 8, "fixed": 8, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 14, "fixed": 14, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_ethena_oct2023.pdf",
+      "repoLinks": ["https://github.com/ethena-labs/ethena"],
+      "commitHashes": ["beb03623f1355752f786abb281bb0e15b6f601d5/"],
+      "team": [
+        {
+          "name": "0x4non",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2cc6b617-8d55-4036-3c8f-9790e5d70a00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0x4non",
+          "role": "asr"
+        },
+        {
+          "name": "Kurt Barry",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/53a5d2e6-c297-4b1c-2bef-3a45c0314800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "kmbarry1",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "6472b7a9-67af-47b4-8000-30125ee2fb97",
+      "client": {
+        "name": "HMX",
+        "website": "https://hermes-dao.io/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/7bc9763b-d494-4fa0-1662-1f6fa7a91900/public"
+      },
+      "timeline": { "start": "16 October 2023", "end": "18 October 2023" },
+      "title": "HMXv2",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "informational", "count": 3, "fixed": 3, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_hmx_oct2023.pdf",
+      "repoLinks": ["https://github.com/HMXOrg/v2-evm"],
+      "commitHashes": ["1072b9d2e8480ad22397f82b5bfb74ad9f00f625"],
+      "team": [
+        {
+          "name": "Throttle",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/1a71fcdb-ea3a-4082-ffdb-54b073a42200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Thro77le",
+          "role": "sr"
+        },
+        {
+          "name": "0x4non",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2cc6b617-8d55-4036-3c8f-9790e5d70a00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0x4non",
+          "role": "asr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "71325ea5-1700-4520-a956-df63734fe4a6",
+      "client": {
+        "name": "MakerDAO",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "10 October 2023", "end": "16 October 2023" },
+      "title": "sparklend-conduits",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 5, "fixed": 3, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_sparkconduits_oct2023.pdf",
+      "repoLinks": ["https://github.com/marsfoundation/sparklend-conduits"],
+      "commitHashes": ["2d559911963ca6e5fde88c46ff22ec7b2e515ead"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "693b6f24-6e47-4194-97b0-356d10dc1df6",
+      "client": {
+        "name": "Centrifuge",
+        "website": "https://centrifuge.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/76314f6e-4bf5-4007-ccb9-7827c362fd00/public"
+      },
+      "timeline": { "start": "05 October 2023", "end": "19 October 2023" },
+      "title": "liquidity-pools",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 5, "fixed": 5, "acknowledged": 0 },
+        { "category": "low", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "informational", "count": 11, "fixed": 3, "acknowledged": 8 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_centrifuge_oct2023.pdf",
+      "repoLinks": ["https://github.com/centrifuge/liquidity-pools"],
+      "commitHashes": ["836f03b3d743370e62ab6f627784850ba21f68b4"],
+      "team": [
+        {
+          "name": "Liam Eastwood",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/b1f3fd24-fda2-4753-74e0-03dab2d5b400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xleastwood",
+          "role": "lsr"
+        },
+        {
+          "name": "Sujith Somraaj",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/caec54f1-e407-4394-f248-bc4f7e2db300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "sujithsomraaj",
+          "role": "asr"
+        }
+      ]
+    },
+    {
+      "id": "2c9a9dc9-d39d-4018-a61b-d7b43619180e",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "28 September 2023", "end": "16 October 2023" },
+      "title": "morpho-blue-irm",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "informational", "count": 5, "fixed": 2, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_morpho_blue_irm_oct2023.pdf",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue-irm"],
+      "commitHashes": ["6a6cc5112fb7150ef1fe8a9ab30fa83280da8078"],
+      "team": [
+        {
+          "name": "Jonah Wu",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c3d860e6-f94a-42c2-bbc8-1689b87f7e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Jonah246",
+          "role": "lsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        },
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "76cf5e78-91c0-4d9e-85d5-fad90ec7ba25",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "28 September 2023", "end": "16 October 2023" },
+      "title": "Morpho Blue",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 7, "fixed": 0, "acknowledged": 7 },
+        { "category": "medium", "count": 4, "fixed": 2, "acknowledged": 2 },
+        { "category": "low", "count": 22, "fixed": 11, "acknowledged": 11 },
+        { "category": "informational", "count": 62, "fixed": 33, "acknowledged": 29 },
+        { "category": "gas_optimization", "count": 5, "fixed": 2, "acknowledged": 3 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cantina.xyz/",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue/"],
+      "commitHashes": ["11e69bb150f4f360174e03c85498b85e74810c53"],
+      "team": [
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "ccf91a4a-d29b-40e7-b48e-2669edc06b7e",
+      "client": {
+        "name": "MakerDAO",
+        "website": "https://makerdao.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49280523-de81-4d44-73a7-3d5a21459000/public"
+      },
+      "timeline": { "start": "26 September 2023", "end": "09 October 2023" },
+      "title": "dss-allocator",
+      "scope": "",
+      "kind": "cantina_managed",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 4, "fixed": 2, "acknowledged": 2 },
+        { "category": "informational", "count": 5, "fixed": 4, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 2, "fixed": 2, "acknowledged": 0 }
+      ],
+      "categories": [],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_makerdao_dssallocator_sep2023.pdf",
+      "repoLinks": ["https://github.com/makerdao/dss-allocator"],
+      "commitHashes": ["dc192486bd12efa5045af509c9570214e57997bd"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "shung",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/889cbe9e-6ca5-40cd-ddc9-9a32f7543200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shung",
+          "role": "asr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        }
+      ]
+    }
+  ],
+  "cantinaCompetitions": [
+    {
+      "id": "3cdcca63-f15d-4cbe-96b2-fa52aa777737",
+      "client": {
+        "name": "Babylonchain",
+        "website": "https://babylonchain.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3c353b46-1b88-4ddf-86d3-fcec21bd2d00/public"
+      },
+      "timeline": { "start": "28 May 2024", "end": "24 June 2024" },
+      "title": "Bitcoin Staking Scripts",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 4, "fixed": 4, "acknowledged": 0 },
+        { "category": "medium", "count": 11, "fixed": 8, "acknowledged": 3 },
+        { "category": "low", "count": 42, "fixed": 0, "acknowledged": 42 },
+        { "category": "informational", "count": 32, "fixed": 0, "acknowledged": 32 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_babylon_may2024.pdf",
+      "repoLinks": [
+        "https://github.com/babylonchain/staking-indexer",
+        "https://github.com/babylonchain/staking-api-service",
+        "https://github.com/babylonchain/covenant-signer",
+        "https://github.com/babylonchain/babylon",
+        "https://github.com/babylonchain/btc-staking-ts",
+        "https://github.com/babylonchain/cli-tools"
+      ],
+      "commitHashes": [
+        "c7a3fbce12732856d66629d3bdc65fcd53246b6d",
+        "2d3c4632ee446a46d5efaaedf756996a96cf0a7f",
+        "481cc1c55a3a65b79fef4f9e163764b684102ad6",
+        "ae2182029020b8873173db826f0b71eb2d3fd01a",
+        "2483c97f6156d507f74ef4dcc814c67c29d44460",
+        "98ad1d66e91ca8e477090a44492e1c68532dfeb8"
+      ],
+      "team": []
+    },
+    {
+      "id": "2c5aba7f-d561-4b2b-bbcc-184095521c35",
+      "client": {
+        "name": "AAVE",
+        "website": "https://aave.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/30113e17-4f62-4623-d554-91ddcb789200/public"
+      },
+      "timeline": { "start": "10 May 2024", "end": "20 May 2024" },
+      "title": "aave v3.1",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "informational", "count": 14, "fixed": 0, "acknowledged": 14 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_aave_may2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/test"],
+      "commitHashes": ["5819992c0af68a8844d000ebd3687b75ae8c1608"],
+      "team": []
+    },
+    {
+      "id": "1b6a9e55-49a8-46e9-8272-a849fd60fcc4",
+      "client": {
+        "name": "OP Labs",
+        "website": "https://oplabs.co",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/0eaeeb76-6405-4722-95b1-144a6fee3f00/public"
+      },
+      "timeline": { "start": "06 May 2024", "end": "10 May 2024" },
+      "title": "safe-extensions",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "low", "count": 93, "fixed": 0, "acknowledged": 93 },
+        { "category": "informational", "count": 44, "fixed": 0, "acknowledged": 44 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_optimism_may2024.pdf",
+      "repoLinks": ["https://github.com/ethereum-optimism/optimism"],
+      "commitHashes": ["a6d4eeda11477adfcd106e03131625a40334e3a6"],
+      "team": []
+    },
+    {
+      "id": "a1f77756-21c4-43ae-a210-2ebd014d221f",
+      "client": {
+        "name": "Venus Protocol",
+        "website": "https://venus.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e501dee3-c281-45f5-baf8-d3e6ed9ff000/public"
+      },
+      "timeline": { "start": "22 March 2024", "end": "05 April 2024" },
+      "title": "governance-contracts",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 57, "fixed": 0, "acknowledged": 57 },
+        { "category": "informational", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_venus_apr2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/VenusProtocol-governance-contracts"],
+      "commitHashes": ["2068398975982bab787168cfd58eca4921e3caad"],
+      "team": []
+    },
+    {
+      "id": "404911dd-3a50-4b63-90d4-e0b9164a34a5",
+      "client": {
+        "name": "Goat Tech",
+        "website": "https://arb.goat.tech",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/591d22da-6a34-4de0-3a7a-08e1d3ca9c00/public"
+      },
+      "timeline": { "start": "19 March 2024", "end": "08 April 2024" },
+      "title": "Smart-contracts",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 17, "fixed": 14, "acknowledged": 3 },
+        { "category": "medium", "count": 16, "fixed": 9, "acknowledged": 7 },
+        { "category": "low", "count": 31, "fixed": 0, "acknowledged": 31 },
+        { "category": "informational", "count": 39, "fixed": 0, "acknowledged": 39 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_goat_mar2024.pdf",
+      "repoLinks": ["https://github.com/goattechlabs/Smart-contracts"],
+      "commitHashes": ["fb43992f33066f264ad12cc86c954f7f6f9c710a"],
+      "team": []
+    },
+    {
+      "id": "c8a5b27c-dce9-47b2-8a03-fc7024aa4423",
+      "client": {
+        "name": "Eigenlayer",
+        "website": "https://www.eigenlayer.xyz/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/bcaa4bdf-d8e9-421e-c86d-86b67b2dae00/public"
+      },
+      "timeline": { "start": "27 February 2024", "end": "18 March 2024" },
+      "title": "eigenlayer-contracts",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "medium", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "low", "count": 14, "fixed": 0, "acknowledged": 14 },
+        { "category": "informational", "count": 53, "fixed": 0, "acknowledged": 53 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_eigenlayer_mar2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/eigenlayer-competition"],
+      "commitHashes": ["c44cced3e1a97d99584e2ac067adee8b49ea1e9e"],
+      "team": []
+    },
+    {
+      "id": "b2f35a21-b116-4ed6-95e6-37405749a716",
+      "client": {
+        "name": "Arcade.xyz",
+        "website": "https://arcade.xyz",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3abaed7c-6a7e-4942-bb84-aaea5c398700/public"
+      },
+      "timeline": { "start": "22 February 2024", "end": "07 March 2024" },
+      "title": "arcadexyz arcade-protocol",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "low", "count": 16, "fixed": 0, "acknowledged": 16 },
+        { "category": "informational", "count": 40, "fixed": 0, "acknowledged": 40 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_arcade_mar2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/arcade-protocol"],
+      "commitHashes": ["d5744c758f198df4c62a8eb6d9b07ef08eeb00f6"],
+      "team": []
+    },
+    {
+      "id": "0c9f46ff-e5b4-412c-b928-ecb135f44007",
+      "client": {
+        "name": "OpalProtocol",
+        "website": "https://opaldefi.xyz/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/dcbe21c2-eaf6-4966-aeb2-861b8051db00/public"
+      },
+      "timeline": { "start": "12 February 2024", "end": "20 February 2024" },
+      "title": "opal-contracts",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "high", "count": 22, "fixed": 0, "acknowledged": 22 },
+        { "category": "medium", "count": 23, "fixed": 0, "acknowledged": 23 },
+        { "category": "low", "count": 63, "fixed": 0, "acknowledged": 63 },
+        { "category": "informational", "count": 68, "fixed": 0, "acknowledged": 68 },
+        { "category": "gas_optimization", "count": 61, "fixed": 0, "acknowledged": 61 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_opal_feb2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/OpalProtocol-cantina-audit"],
+      "commitHashes": ["0546f900388ac86ea49a26665874edd72f68cab0"],
+      "team": []
+    },
+    {
+      "id": "b1baa964-865e-4ae7-9087-72859d9c46ea",
+      "client": {
+        "name": "Olas",
+        "website": "https://olas.network/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/72571b91-d762-4bf3-96a0-459c2b788700/public"
+      },
+      "timeline": { "start": "15 January 2024", "end": "29 January 2024" },
+      "title": "lockbox-solana",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "medium", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "low", "count": 15, "fixed": 0, "acknowledged": 15 },
+        { "category": "informational", "count": 17, "fixed": 0, "acknowledged": 17 },
+        { "category": "gas_optimization", "count": 3, "fixed": 0, "acknowledged": 3 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_superform_erc115A_dec2023.pdf",
+      "repoLinks": ["https://github.com/valory-xyz/lockbox-solana"],
+      "commitHashes": ["1736f39671c263311b0cedee290aef7eb9a81ef8"],
+      "team": []
+    },
+    {
+      "id": "6d383aaf-8554-4a06-a224-86189f81f531",
+      "client": {
+        "name": "ZeroLend",
+        "website": "https://zerolend.xyz/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ce60ac4b-4a89-4810-cd7a-c9bf26f4a500/public"
+      },
+      "timeline": { "start": "08 January 2024", "end": "25 January 2024" },
+      "title": "incentive-contracts",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "medium", "count": 17, "fixed": 0, "acknowledged": 17 },
+        { "category": "low", "count": 193, "fixed": 0, "acknowledged": 193 },
+        { "category": "informational", "count": 191, "fixed": 0, "acknowledged": 191 },
+        { "category": "gas_optimization", "count": 48, "fixed": 0, "acknowledged": 48 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_zerolend_jan2024.pdf",
+      "repoLinks": ["https://github.com/zerolend/incentive-contracts"],
+      "commitHashes": ["8415122ac0592042c4cfdd048850a92ee4c8c01d"],
+      "team": []
+    },
+    {
+      "id": "884b81e0-a6f3-432b-bb70-8491c231f5a9",
+      "client": {
+        "name": "Superform",
+        "website": "https://superform.xyz",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c5294bdc-6a2a-43b5-852b-4f1ad9af3200/public"
+      },
+      "timeline": { "start": "27 November 2023", "end": "18 December 2023" },
+      "title": "core-and-erc1155a",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "medium", "count": 18, "fixed": 0, "acknowledged": 18 },
+        { "category": "low", "count": 87, "fixed": 0, "acknowledged": 87 },
+        { "category": "informational", "count": 90, "fixed": 0, "acknowledged": 90 },
+        { "category": "gas_optimization", "count": 15, "fixed": 0, "acknowledged": 15 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_superform_erc1155a_dec2023.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/superform-contest-mono"],
+      "commitHashes": ["8da3ebf4ce4aa1d60b6d1187bc7fbad1dfcc9922"],
+      "team": []
+    },
+    {
+      "id": "c8366258-22bd-4e11-a6e9-c39ce06539ad",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "16 November 2023", "end": "07 December 2023" },
+      "title": "metamorpho and periphery",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 13, "fixed": 0, "acknowledged": 13 },
+        { "category": "low", "count": 113, "fixed": 0, "acknowledged": 113 },
+        { "category": "informational", "count": 156, "fixed": 0, "acknowledged": 156 },
+        { "category": "gas_optimization", "count": 10, "fixed": 0, "acknowledged": 10 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_morpho_metamorpho_dec2023.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/metamorpho-and-periphery"],
+      "commitHashes": ["6c725427405b7448393e18b23b3c81cc6e4d4b8b"],
+      "team": []
+    },
+    {
+      "id": "b695ccbb-9d8b-4cac-be69-706f8c3684e5",
+      "client": {
+        "name": "Morpho",
+        "website": "https://morpho.org",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/49be999a-a44f-4d2e-de7c-ea3a11173300/public"
+      },
+      "timeline": { "start": "13 November 2023", "end": "04 December 2023" },
+      "title": "morpho-blue",
+      "scope": "",
+      "kind": "public_competition",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "medium", "count": 8, "fixed": 0, "acknowledged": 8 },
+        { "category": "low", "count": 151, "fixed": 0, "acknowledged": 151 },
+        { "category": "informational", "count": 163, "fixed": 0, "acknowledged": 163 },
+        { "category": "gas_optimization", "count": 36, "fixed": 0, "acknowledged": 36 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_competition_morpho_blue_dec2023.pdf",
+      "repoLinks": ["https://github.com/morpho-org/morpho-blue"],
+      "commitHashes": ["f463e40f776acd0f26d0d380b51cfd02949c8c23"],
+      "team": []
+    }
+  ],
+  "cantinaSolo": [
+    {
+      "id": "e95ebe78-2c6a-41d0-8e3a-9acd63447d98",
+      "client": {
+        "name": "Sushi",
+        "website": "https://sushi.com",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/4245c26e-be8e-421b-ac7f-ae6b968f1f00/public"
+      },
+      "timeline": { "start": "19 July 2024", "end": "20 July 2024" },
+      "title": "sushiswap",
+      "scope": "",
+      "kind": "cantina_solo",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 2, "fixed": 0, "acknowledged": 2 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_sushiswap_jul2024.pdf",
+      "repoLinks": ["https://github.com/sushiswap/sushiswap"],
+      "commitHashes": ["2d5607ab96a1b70e03cf028a07693b9b23f2499f"],
+      "team": [
+        {
+          "name": "MiloTruck",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/557c154e-34be-4ef8-cefc-418613c82b00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "milotruck",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "63a79cb6-420a-45d5-a849-bb1e4bdfece1",
+      "client": {
+        "name": "Gentleman Labs",
+        "website": "https://www.degen.tips/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/f58d97b7-d1fe-47bc-5040-7eac06255900/public"
+      },
+      "timeline": { "start": "16 July 2024", "end": "18 July 2024" },
+      "title": "degen-smart-contracts",
+      "scope": "",
+      "kind": "cantina_solo",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "low", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "informational", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_degen_jul2024.pdf",
+      "repoLinks": ["https://github.com/degen-token/degen-smart-contracts"],
+      "commitHashes": ["acabe62058e6badd89214de023102b552d887ada"],
+      "team": [
+        {
+          "name": "MiloTruck",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/557c154e-34be-4ef8-cefc-418613c82b00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "milotruck",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "bd046a21-6683-498a-b0e0-fc641e47191a",
+      "client": {
+        "name": "Superform",
+        "website": "https://superform.xyz",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c5294bdc-6a2a-43b5-852b-4f1ad9af3200/public"
+      },
+      "timeline": { "start": "30 June 2024", "end": "07 July 2024" },
+      "title": "Superform-core",
+      "scope": "",
+      "kind": "cantina_solo",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "medium", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "low", "count": 6, "fixed": 4, "acknowledged": 2 },
+        { "category": "informational", "count": 4, "fixed": 3, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_solo_superform_jul2024.pdf",
+      "repoLinks": ["https://github.com/superform-xyz/superform-core"],
+      "commitHashes": ["feb9cdcff99787a81565d1e52a59a44e71f274a6"],
+      "team": [
+        {
+          "name": "GiuseppeDeLaZara",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/da22b044-64a5-4019-7a33-97d5f96a7f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "GiuseppeDeLaZara",
+          "role": "asr"
+        },
+        {
+          "name": "Akshay Srivastav",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e20fb1c4-90b4-43a6-0ffa-e8a7a5612000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "AkshaySrivastav",
+          "role": "asr"
+        },
+        {
+          "name": "cergyk",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/f1ed3541-914f-4296-d0a7-7eec86763900/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cergyk",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "0496f8ff-ed7f-467f-8263-adfcc321121a",
+      "client": {
+        "name": "Marginal",
+        "website": "https://marginal.network",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/41471026-191b-4712-656d-368036e3fb00/public"
+      },
+      "timeline": { "start": "22 April 2024", "end": "24 April 2024" },
+      "title": "dao",
+      "scope": "",
+      "kind": "cantina_solo",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "low", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "informational", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "gas_optimization", "count": 6, "fixed": 0, "acknowledged": 6 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_solo_marginal_dao_apr2024.pdf",
+      "repoLinks": ["https://github.com/MarginalProtocol/dao"],
+      "commitHashes": ["5b67cea5c2f95c8586332dc870df43ed6ca51ded"],
+      "team": [
+        {
+          "name": "Kaden",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3c22b609-2b3e-43f6-3010-95b4cfbfa200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xkaden",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "083add5c-19a7-4c6d-9492-9079006ac222",
+      "client": {
+        "name": "Quail Finance",
+        "website": "https://quail.finance",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e0c14a61-f10d-4a6e-903d-e2a5afe32500/public"
+      },
+      "timeline": { "start": "22 March 2024", "end": "24 March 2024" },
+      "title": "QuailContracts",
+      "scope": "",
+      "kind": "cantina_solo",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "high", "count": 9, "fixed": 0, "acknowledged": 9 },
+        { "category": "medium", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "low", "count": 5, "fixed": 0, "acknowledged": 5 },
+        { "category": "informational", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "gas_optimization", "count": 2, "fixed": 0, "acknowledged": 2 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cdn.cantina.xyz/reports/cantina_solo_quail_mar2024.pdf",
+      "repoLinks": ["https://github.com/Quail-Finance/QuailContracts"],
+      "commitHashes": ["e435d21904bd61ad12253831015a5f525a37e417"],
+      "team": [
+        {
+          "name": "Blockdev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09a28a57-e9d9-45fe-b465-6fff31f22200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xbok",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "1be251d3-364b-4e25-8f1d-b1aa6282321f",
+      "client": {
+        "name": "Sablier",
+        "website": "https://sablier.com",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/89eceb29-10be-4d60-5334-e58e94f8e200/public"
+      },
+      "timeline": { "start": "10 November 2023", "end": "16 November 2023" },
+      "title": "v2-periphery\nv2-core",
+      "scope": "",
+      "kind": "cantina_solo",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "low", "count": 2, "fixed": 1, "acknowledged": 1 },
+        { "category": "informational", "count": 1, "fixed": 0, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://cantina.xyz/",
+      "repoLinks": [
+        "https://github.com/sablier-labs/v2-periphery\nhttps://github.com/sablier-labs/v2-core"
+      ],
+      "commitHashes": [
+        "0004fd2e61e032df3d895045ec414ecb212ddcc8\n2d19596e02e6c7ddab15ece1d140addee4d6f10c"
+      ],
+      "team": [
+        {
+          "name": "Zach Obront",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/db46759c-e1bf-4bae-66e1-7d4e959ec500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "zobront",
+          "role": "lsr"
+        }
+      ]
+    }
+  ],
+  "spearbitGuild": [
+    {
+      "id": "427d48c3-3f54-4891-a710-0784ffaded87",
+      "client": {
+        "name": "Tradable Finance",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09392122-01f8-4083-da8a-69e655460a00/public"
+      },
+      "timeline": { "start": "22 July 2024", "end": "06 August 2024" },
+      "title": "tradable-onchainv2",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 4, "fixed": 4, "acknowledged": 0 },
+        { "category": "medium", "count": 5, "fixed": 4, "acknowledged": 1 },
+        { "category": "low", "count": 6, "fixed": 5, "acknowledged": 1 },
+        { "category": "informational", "count": 20, "fixed": 15, "acknowledged": 5 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Tradable-Spearbit-Security-Review-July2024.pdf",
+      "repoLinks": ["https://github.com/cantina-forks/tradeable-onchain-v2"],
+      "commitHashes": ["aed8713ab0d20fdb4cbbaca8aa7b9126320a68f9"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "Akshay Srivastav",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e20fb1c4-90b4-43a6-0ffa-e8a7a5612000/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "AkshaySrivastav",
+          "role": "sr"
+        },
+        {
+          "name": "cergyk",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/f1ed3541-914f-4296-d0a7-7eec86763900/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cergyk",
+          "role": "sr"
+        },
+        {
+          "name": "0xicingdeath",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9ea05d13-797f-4f81-be3d-5123c3eb5800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xicingdeath",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "8c15e83a-08fc-48b9-8cc1-4f9ca76bb064",
+      "client": {
+        "name": "Centrifuge",
+        "website": "https://centrifuge.io",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/76314f6e-4bf5-4007-ccb9-7827c362fd00/public"
+      },
+      "timeline": { "start": "15 July 2024", "end": "28 July 2024" },
+      "title": "liquidity-pools",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "low", "count": 25, "fixed": 16, "acknowledged": 9 },
+        { "category": "informational", "count": 60, "fixed": 36, "acknowledged": 24 },
+        { "category": "gas_optimization", "count": 8, "fixed": 7, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Centrifuge-Spearbit-Security-Review-July-2024.pdf",
+      "repoLinks": ["https://github.com/centrifuge/liquidity-pools"],
+      "commitHashes": ["be582c7cb513869898caf4a78cdf49f19ac4b397"],
+      "team": [
+        {
+          "name": "Liam Eastwood",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/b1f3fd24-fda2-4753-74e0-03dab2d5b400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xleastwood",
+          "role": "lsr"
+        },
+        {
+          "name": "Gerard Persoon",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c56d41ed-b226-42a5-8c6d-bceb38d6a400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "gpersoon",
+          "role": "lsr"
+        },
+        {
+          "name": "Jonatas Martins",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32a128c7-503e-4190-9228-7eaa09507100/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "jonatascm",
+          "role": "asr"
+        },
+        {
+          "name": "devtooligan",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/14d9d215-213f-4b6b-de4d-225a668b8800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "devtooligan",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "68a03e95-fb25-4303-8dac-9e878968d79b",
+      "client": {
+        "name": "Delv",
+        "website": "https://www.element.fi/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a5a72b65-e16e-42b0-60e8-45c52e882800/public"
+      },
+      "timeline": { "start": "10 June 2024", "end": "21 June 2024" },
+      "title": "hyperdrive",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 3, "fixed": 2, "acknowledged": 1 },
+        { "category": "informational", "count": 4, "fixed": 1, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Delv-Spearbit-Security-Review-June-2024.pdf",
+      "repoLinks": ["https://github.com/delvtech/hyperdrive"],
+      "commitHashes": ["e9155984ed0997ead88e2e1d4ae44546bce703c8"],
+      "team": [
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "e689101f-df0a-4ab3-81b7-08b5567c9176",
+      "client": {
+        "name": "Overprotocol",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/e059cbbb-55cb-4f98-3b28-784d910e3c00/public"
+      },
+      "timeline": { "start": "06 June 2024", "end": "20 June 2024" },
+      "title": "kairos",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 4, "fixed": 4, "acknowledged": 0 },
+        { "category": "informational", "count": 9, "fixed": 0, "acknowledged": 9 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Overprotocol-Spearbit-Security-Review-June-2024.pdf",
+      "repoLinks": ["https://github.com/overprotocol/kairos"],
+      "commitHashes": ["826a055d672ed4e4742e7d6511a42d5b4e16a752"],
+      "team": [
+        {
+          "name": "dtheo",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a063f6d6-262e-42e6-2348-4a25fceae500/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "dtheo",
+          "role": "lsr"
+        },
+        {
+          "name": "Justin Traglia",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/bfdedaab-1e76-441b-d86c-81f7ad7a0b00/public",
+          "verified": false,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "jtraglia",
+          "role": "lsr"
+        },
+        {
+          "name": "shotes",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3c594a9a-d9c9-406a-c964-089c96bd8800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "shotes",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "id": "9c74ee0f-bbf8-422e-be8c-849263faa2f9",
+      "client": {
+        "name": "Coinbase",
+        "website": "https://www.coinbase.com/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/32f837aa-461f-42b4-5c99-2aa6599cf500/public"
+      },
+      "timeline": { "start": "03 June 2024", "end": "24 June 2024" },
+      "title": "dispute non-mips",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 4, "fixed": 0, "acknowledged": 4 },
+        { "category": "low", "count": 6, "fixed": 0, "acknowledged": 6 },
+        { "category": "informational", "count": 12, "fixed": 0, "acknowledged": 12 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Base-Spearbit-Security-Review-August-2024.pdf",
+      "repoLinks": ["https://github.com/ethereum-optimism/optimism"],
+      "commitHashes": ["1f7081798ce2d49b8643514663d10681cb853a3d"],
+      "team": [
+        {
+          "name": "Cryptara",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/f10b88a3-81ab-484a-bb22-735430fd2e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cryptara",
+          "role": "asr"
+        },
+        {
+          "name": "Manuel Polzhofer",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9ce6bdd3-3ecc-4c71-c2b3-dd00d9fd7d00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "xmxanuel",
+          "role": "lsr"
+        },
+        {
+          "name": "ladboy233",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a3d03462-eab5-4d58-d84b-587d7b1be200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "ladboy233",
+          "role": "sr"
+        },
+        {
+          "name": "HickupHH3",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3ae511e6-f128-452f-fce0-ceac1963df00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "HickupHH3",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "168747e9-d65a-4e05-a144-53e9fbc1d4f5",
+      "client": {
+        "name": "Pendle Finance",
+        "website": "https://www.pendle.finance",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/2b01fc25-74fe-4674-66e2-b90805e65500/public"
+      },
+      "timeline": { "start": "15 May 2024", "end": "06 June 2024" },
+      "title": "pendle-core-v2",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "medium", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "low", "count": 5, "fixed": 3, "acknowledged": 2 },
+        { "category": "informational", "count": 3, "fixed": 0, "acknowledged": 3 },
+        { "category": "gas_optimization", "count": 1, "fixed": 0, "acknowledged": 1 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Pendle-Spearbit-Security-Review-July-2024.pdf",
+      "repoLinks": ["https://github.com/pendle-finance/pendle-core-v2"],
+      "commitHashes": ["4d83f46d3a872559fbfebf62adcbb29da159b264"],
+      "team": [
+        {
+          "name": "xiaoming90",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/aec0146f-f5f9-4779-5412-bb4530e77300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "xiaoming9090",
+          "role": "sr"
+        },
+        {
+          "name": "Kurt Barry",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/53a5d2e6-c297-4b1c-2bef-3a45c0314800/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "kmbarry1",
+          "role": "lsr"
+        },
+        {
+          "name": "Mario Poneder",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/1e00e299-b2fb-42f6-f5d6-c0cc57107e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xTheC0der",
+          "role": "asr"
+        },
+        {
+          "name": "hyh",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/9b98cd4d-2567-43c3-9dea-45d32eb86e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "dmitriia",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "5424e58b-78d8-48c6-a637-ccab2ec94311",
+      "client": {
+        "name": "Euler",
+        "website": "https://www.euler.finance/#/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8652cfc9-3821-4ecf-caf5-25ffab4b3a00/public"
+      },
+      "timeline": { "start": "08 April 2024", "end": "20 May 2024" },
+      "title": "ethereum-price-oracle",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "low", "count": 4, "fixed": 2, "acknowledged": 2 },
+        { "category": "informational", "count": 29, "fixed": 14, "acknowledged": 15 },
+        { "category": "gas_optimization", "count": 1, "fixed": 1, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Euler-Spearbit-Security-Review-Oracle-April-2024.pdf",
+      "repoLinks": ["https://github.com/euler-xyz/ethereum-price-oracle"],
+      "commitHashes": ["eeb1847df7d9d58029de37225dabf963bf1a65e6"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "Christos Pap",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3913b6a8-7215-4b2c-98e4-106891566400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "christos-eth",
+          "role": "jsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        },
+        {
+          "name": "David Ch.",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ad3a95cd-83bc-412b-2415-1b8070278600/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Deivitto",
+          "role": "jsr"
+        }
+      ]
+    },
+    {
+      "id": "65b1bc91-07ad-4154-876d-b881189562f6",
+      "client": {
+        "name": "Euler",
+        "website": "https://www.euler.finance/#/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8652cfc9-3821-4ecf-caf5-25ffab4b3a00/public"
+      },
+      "timeline": { "start": "08 April 2024", "end": "20 May 2024" },
+      "title": "ethereum-vault-kit",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "medium", "count": 7, "fixed": 5, "acknowledged": 2 },
+        { "category": "low", "count": 24, "fixed": 9, "acknowledged": 15 },
+        { "category": "informational", "count": 63, "fixed": 30, "acknowledged": 33 },
+        { "category": "gas_optimization", "count": 7, "fixed": 3, "acknowledged": 4 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Euler-Spearbit-Security-Review-EVK-April-2024.pdf",
+      "repoLinks": ["https://github.com/euler-xyz/ethereum-vault-kit"],
+      "commitHashes": ["2bcd7e5ba33d53d1236f5ff2d4d3f71e04c61d0d"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "Christos Pap",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3913b6a8-7215-4b2c-98e4-106891566400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "christos-eth",
+          "role": "jsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        },
+        {
+          "name": "David Ch.",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ad3a95cd-83bc-412b-2415-1b8070278600/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Deivitto",
+          "role": "jsr"
+        }
+      ]
+    },
+    {
+      "id": "372492f1-b866-44df-b454-7fc8462223ac",
+      "client": {
+        "name": "Euler",
+        "website": "https://www.euler.finance/#/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8652cfc9-3821-4ecf-caf5-25ffab4b3a00/public"
+      },
+      "timeline": { "start": "08 April 2024", "end": "10 May 2024" },
+      "title": "ethereum-vault-connector",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "low", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "informational", "count": 14, "fixed": 13, "acknowledged": 1 },
+        { "category": "gas_optimization", "count": 0, "fixed": 0, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Euler-Spearbit-Security-Review-EVC-April-2024.pdf",
+      "repoLinks": ["https://github.com/euler-xyz/ethereum-vault-connector"],
+      "commitHashes": ["c30606b44f1d1cabba303dfd13046e5444cab775"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "Christos Pap",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/3913b6a8-7215-4b2c-98e4-106891566400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "christos-eth",
+          "role": "jsr"
+        },
+        {
+          "name": "StErMi",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/d5fa54aa-edbd-4780-6065-7a3663b40c00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "StErMi",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        },
+        {
+          "name": "David Ch.",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ad3a95cd-83bc-412b-2415-1b8070278600/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Deivitto",
+          "role": "jsr"
+        }
+      ]
+    },
+    {
+      "id": "96891d4e-404b-407a-8082-0ba40111dc7f",
+      "client": {
+        "name": "Fastlane",
+        "website": null,
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8842bf3d-b373-4737-25fa-86c4329ac300/public"
+      },
+      "timeline": { "start": "01 April 2024", "end": "10 May 2024" },
+      "title": "atlas",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 15, "fixed": 15, "acknowledged": 0 },
+        { "category": "medium", "count": 25, "fixed": 24, "acknowledged": 1 },
+        { "category": "low", "count": 35, "fixed": 31, "acknowledged": 4 },
+        { "category": "informational", "count": 81, "fixed": 74, "acknowledged": 7 },
+        { "category": "gas_optimization", "count": 34, "fixed": 31, "acknowledged": 3 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Fastlane-Spearbit-Security-Review-April-2024.pdf",
+      "repoLinks": ["https://github.com/FastLane-Labs/atlas"],
+      "commitHashes": ["551eb4f637f6f10121f7cf108f4266f952861101"],
+      "team": [
+        {
+          "name": "Gerard Persoon",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/c56d41ed-b226-42a5-8c6d-bceb38d6a400/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "gpersoon",
+          "role": "lsr"
+        },
+        {
+          "name": "Blockdev",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/09a28a57-e9d9-45fe-b465-6fff31f22200/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "0xbok",
+          "role": "sr"
+        },
+        {
+          "name": "Riley Holterhus",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/6c8fd295-6f66-44b7-ee4f-a94beef01e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "rholterhus",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "bc014e87-57e5-49cf-9314-1caa46f23efe",
+      "client": {
+        "name": "Delv",
+        "website": "https://www.element.fi/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a5a72b65-e16e-42b0-60e8-45c52e882800/public"
+      },
+      "timeline": { "start": "18 March 2024", "end": "31 March 2023" },
+      "title": "hyperdrive",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 1, "fixed": 1, "acknowledged": 0 },
+        { "category": "high", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "medium", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "low", "count": 5, "fixed": 4, "acknowledged": 1 },
+        { "category": "informational", "count": 12, "fixed": 8, "acknowledged": 4 },
+        { "category": "gas_optimization", "count": 2, "fixed": 2, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Delv-Spearbit-Security-Review-March-2024.pdf",
+      "repoLinks": ["https://github.com/delvtech/hyperdrive"],
+      "commitHashes": ["d264165f0b81ccfdb082cf20b2e5f4be63ff9bd9"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        },
+        {
+          "name": "David Ch.",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ad3a95cd-83bc-412b-2415-1b8070278600/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Deivitto",
+          "role": "jsr"
+        },
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        }
+      ]
+    },
+    {
+      "id": "60090ae2-6810-4c0b-9ac5-20a53346e4fb",
+      "client": {
+        "name": "Delv",
+        "website": "https://www.element.fi/",
+        "logo": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a5a72b65-e16e-42b0-60e8-45c52e882800/public"
+      },
+      "timeline": { "start": "29 January 2024", "end": "29 February 2024" },
+      "title": "hyperdrive",
+      "scope": "",
+      "kind": "spearbit_web3",
+      "issues": [
+        { "category": "critical", "count": 0, "fixed": 0, "acknowledged": 0 },
+        { "category": "high", "count": 2, "fixed": 2, "acknowledged": 0 },
+        { "category": "medium", "count": 7, "fixed": 6, "acknowledged": 1 },
+        { "category": "low", "count": 19, "fixed": 12, "acknowledged": 7 },
+        { "category": "informational", "count": 36, "fixed": 21, "acknowledged": 15 },
+        { "category": "gas_optimization", "count": 8, "fixed": 8, "acknowledged": 0 }
+      ],
+      "categories": [""],
+      "pdfLink": "https://github.com/spearbit/portfolio/blob/master/pdfs/Delv-Spearbit-Security-Review-February-2024.pdf",
+      "repoLinks": ["https://github.com/delvtech/hyperdrive"],
+      "commitHashes": ["d363f421f8970b5e9ac3649e59cc0ba907f273ea"],
+      "team": [
+        {
+          "name": "Christoph Michel",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/24ab33a6-59f3-4018-48ac-679a2be76f00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "cmichel",
+          "role": "lsr"
+        },
+        {
+          "name": "m4rio",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/182fae4b-c6ea-436e-926e-1e0055868e00/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "m4rio",
+          "role": "sr"
+        },
+        {
+          "name": "David Ch.",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/ad3a95cd-83bc-412b-2415-1b8070278600/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Deivitto",
+          "role": "jsr"
+        },
+        {
+          "name": "Saw-mon and Natalie",
+          "image": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/8039eb9a-b849-4701-675d-fd94168a3300/public",
+          "verified": true,
+          "guild": "https://imagedelivery.net/wtv4_V7VzVsxpAFaxzmpbw/a94293d2-6f7c-4eef-63b9-0c4cdcec1700/public",
+          "username": "Saw-mon-and-Natalie",
+          "role": "lsr"
+        }
+      ]
+    }
+  ]
+}
