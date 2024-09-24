@@ -38,7 +38,7 @@ let getAllReports = () =>
 type PdfMd = { comp: CantinaCompetitionsEntity; pdfMd: string }
 let downloadPdfs = (props: CantinaProps) =>
   pipe(
-    props.cantinaCompetitions.slice(0, 1), // TODO:
+    props.cantinaCompetitions,
     TE.traverseArray((comp) =>
       pipe(
         TE.fromTask(() => loadPdf(comp)),
@@ -52,6 +52,7 @@ const loadPdf = async (contest: CantinaCompetitionsEntity): Promise<string> => {
   Logger.debug(`loading pdf ${contest.pdfLink}`)
   let file = await (await fetch(contest.pdfLink)).arrayBuffer()
 
+  // @ts-ignore
   let md = await pdf2md(file)
     .then((text: any) => {
       return text as string

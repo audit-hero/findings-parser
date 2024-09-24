@@ -67,7 +67,7 @@ const parse = (md) => {
             }
             let titleItems = getTitleItems(line);
             currentFinding = {
-                pk: "",
+                pk: "", // set when storing
                 name: titleItems.name,
                 content: "",
                 url: titleItems.url,

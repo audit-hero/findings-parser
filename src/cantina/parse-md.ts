@@ -12,15 +12,16 @@ export let getHmFindings = (
     getHmParagraphs(md),
     E.chain((it) => E.traverseArray(getFindingParagraphs)(it)),
     E.map((hmParagraphs) =>
-      hmParagraphs.map((hmParagraph) =>
-        hmParagraph.findings.map((finding) => ({
-          severity: hmParagraph.severity,
-          finding,
-          contest,
-        })),
-      ),
+      hmParagraphs
+        .map((hmParagraph) =>
+          hmParagraph.findings.map((finding) => ({
+            severity: hmParagraph.severity,
+            finding,
+            contest,
+          })),
+        )
+        .flat(),
     ),
-    E.map((it) => it.flat()),
     E.chain(E.traverseArray(convertToFinding)),
     E.map((it) => it as FindingStorage[]),
     E.mapLeft((it) => new Error(it)),
@@ -58,7 +59,9 @@ let getFindingParagraphs = (hmParagraph: string) =>
     E.map((matches) =>
       getFindingParagraphsFromMatches(hmParagraph, matches)
         .map(fixLineBreaks)
-        .map(removeAdminComments),
+        .map(removeAdminComments)
+        .map(convertImportantPgToHeadings)
+        .map(removeMoreThanDoubleEmptyLines),
     ),
     E.map((it) => ({
       severity: hmParagraph.match(/^#{1,4}.*(high)/im) ? Severity.HIGH : Severity.MEDIUM,
@@ -73,7 +76,7 @@ let getFindingParagraphsFromMatches = (
   const paragraphs = []
 
   for (let i = 0; i < matches.length; i++) {
-    const { match, index } = matches[i]
+    const { index } = matches[i]
     let end = i === matches.length - 1 ? hmParagraph.length : matches[i + 1].index
     let paragraph = hmParagraph.substring(index, end).trim()
     paragraphs.push(paragraph)
@@ -84,11 +87,21 @@ let getFindingParagraphsFromMatches = (
 
 // prettier-ignore
 export let fixLineBreaks = (paragraph: string): string => 
-    paragraph.replace(/(?<!^)(\s)\w+:\s/gm, '\n\n$&')
-    .replace(/(?<!^)(\s)\*\*\w+:\*\*\s/gm, '\n\n$&')
-    .replace(/\n[^\S\r\n]+/g, '\n') // Remove leading spaces
+  paragraph
+    .replace(/(?<!^)(\s)(\w)+:\s/gm, '\n\n$&')
+    .replace(/(?<!^)(\s)\*\*(\w|\s)+:\*\*\s/gm, '\n\n$&')
+    .replace(/\n[^\S\r\n]+/g, '\n')
 
 // \n**Babylon:** Fixed in staking-indexer PR 124."
 // eg /remove ^**.*:**.*(fixed|solved|will not)/gmi
 export let removeAdminComments = (paragraph: string): string =>
   paragraph.replace(/\n\*\*.*:\*\*.*(fixed|solved|will not).*\n?/gi, "")
+
+export let convertImportantPgToHeadings = (paragraph: string): string =>
+  paragraph.replace(
+    /^(\*\*|)(Description|Impact|Recommendation|Proof of concept|PoC):(\*\*|)(\s+|)/gim,
+    "## $2\n\n",
+  )
+
+let removeMoreThanDoubleEmptyLines = (paragraph: string): string =>
+  paragraph.replaceAll(/\n{2,}/gm, "\n")
