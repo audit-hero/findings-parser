@@ -17,8 +17,5 @@ let getContent = (input) => {
         .join("\n")
         .trim();
 };
-let getUrl = (input) => {
-    let { contest } = input;
-    return `https://cantina.xyz/competition/${contest.id}`;
-};
+let getUrl = ({ contest }) => `https://cantina.xyz/portfolio/${contest.id}`;
 //# sourceMappingURL=pg-to-finding.js.map

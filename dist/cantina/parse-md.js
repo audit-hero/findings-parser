@@ -1,13 +1,14 @@
-import { E, pipe } from "ti-fptsu/lib";
+import { E, flow, pipe } from "ti-fptsu/lib";
 import { convertToFinding } from "./pg-to-finding.js";
 import { Severity } from "ah-shared";
-export let getHmFindings = (md, contest) => pipe(getHmParagraphs(md), E.chain((it) => E.traverseArray(getFindingParagraphs)(it)), E.map((hmParagraphs) => hmParagraphs
+import { trimCantinaContestName } from "./findings-to-result.js";
+export let getHmFindings = (md, contest) => flow(() => console.log(`parsing ${trimCantinaContestName(contest)}`), () => getHmParagraphs(md), E.chain((it) => E.traverseArray(getFindingParagraphs)(it)), E.map((hmParagraphs) => hmParagraphs
     .map((hmParagraph) => hmParagraph.findings.map((finding) => ({
     severity: hmParagraph.severity,
     finding,
     contest,
 })))
-    .flat()), E.chain(E.traverseArray(convertToFinding)), E.map((it) => it), E.mapLeft((it) => new Error(it)));
+    .flat()), E.chain(E.traverseArray(convertToFinding)), E.map((it) => ({ findings: it, comp: contest, pdfMd: md })), E.mapLeft((it) => new Error(it)))();
 let getHmParagraphs = (md) => pipe(md.match(/^#{1,4}.*(high|medium)/gim), E.fromNullable("No headings found"), E.chain((it) => (it.length === 2 ? E.right(it) : E.left("Should have 2 headings"))), 
 // 2 string paragraphs from the regex
 E.map((it) => {

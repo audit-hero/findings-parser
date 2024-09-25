@@ -621,6 +621,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"any-date-parser@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "any-date-parser@npm:1.5.4"
+  checksum: 19770edb15bc11fa3423631653eda99a88148f4507075d13cdcde90e64cd32fdd16054d8f2e061f08e935f8e0d43cc82f920762844439ec81540aec094db55c0
+  languageName: node
+  linkType: hard
+
 "aproba@npm:^1.0.3 || ^2.0.0":
   version: 2.0.0
   resolution: "aproba@npm:2.0.0"
@@ -1148,6 +1155,7 @@ __metadata:
     "@opendocsg/pdf2md": "npm:^0.1.31"
     "@types/node": "npm:^20.11.17"
     ah-shared: "audit-hero/ah-shared#52c0fea0870437daf865eefa13667a042622bd5a"
+    any-date-parser: "npm:^1.5.4"
     chalk: "npm:^5.3.0"
     dedent: "npm:^1.5.3"
     esbuild: "npm:^0.12.5"

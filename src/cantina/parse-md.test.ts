@@ -1,4 +1,4 @@
-import { vi, expect, it } from "vitest"
+import { expect, it } from "vitest"
 import fs from "fs"
 import {
   convertImportantPgToHeadings,
@@ -7,9 +7,7 @@ import {
   removeAdminComments,
 } from "./parse-md.js"
 import dedent from "dedent"
-import { convertToFinding } from "./pg-to-finding.js"
 import { comp } from "./get-findings.test.js"
-import { Severity } from "ah-shared"
 import { pipe, E } from "ti-fptsu/lib"
 
 it("should parse markdown", () => {
@@ -17,7 +15,7 @@ it("should parse markdown", () => {
 
   pipe(
     getHmFindings(md, comp),
-    E.map((it) => expect(it.length).toBe(15)),
+    E.map((it) => expect(it.findings.length).toBe(15)),
     E.orElse((e) => {
       throw e
     }),

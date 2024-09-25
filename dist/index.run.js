@@ -1,6 +1,6 @@
 import { Logger } from "jst-logger";
 import { setParserConfig } from "./config.js";
-import { getCantinaFindings } from "./cantina/cantinaFp.js";
+import { getCantinaFindings } from "./cantina/get-findings.js";
 import { setPlaywrightConfig } from "./web-load/playwright-loader.js";
 import playwright from "playwright";
 import fs from "fs";

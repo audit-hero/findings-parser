@@ -1,44 +1,48 @@
 import { Logger } from "jst-logger"
-import { ALL_TAGS } from "ah-shared"
-import { parserConfig } from "../config.js"
-import { FindingStorage } from "../types.js"
+import { FindingStorage, ParseResult } from "../types.js"
 import { E, pipe, TE } from "ti-fptsu/lib"
 import { loadNextProps } from "../web-load/load-next-props.js"
 import { CantinaCompetitionsEntity, CantinaProps } from "./types.js"
 import pdf2md from "@opendocsg/pdf2md"
 import { log } from "ti-fptsu/log"
 import { getHmFindings } from "./parse-md.js"
+import { findingsToResults } from "./findings-to-result.js"
 
-export let getCantinaFindings = async (): Promise<FindingStorage[]> =>
+export type CantinaParseResult = PdfMd & {
+  findings: FindingStorage[]
+}
+export type PdfMd = { comp: CantinaCompetitionsEntity; pdfMd: string }
+
+export let getCantinaFindings = async (): Promise<ParseResult[]> =>
   pipe(
-    getAllReports(),
+    getNextProps(),
     log(() => "downloading pdfs"),
     TE.chain(downloadPdfs),
     log(() => "parsing pdfs"),
-    TE.chain((pdf) =>
+    TE.chain((pdfs) =>
       pipe(
-        pdf,
+        pdfs,
         E.traverseArray((pdf) => getHmFindings(pdf.pdfMd, pdf.comp)),
         TE.fromEither,
       ),
     ),
     TE.map((it) => it.flat()),
+    TE.map(findingsToResults),
     TE.getOrElse((e) => {
       throw e
     }),
   )()
 
-let getAllReports = () =>
+let getNextProps = () =>
   TE.tryCatch(async () => {
     return (await loadNextProps(
       "https://cantina.xyz/portfolio?section=cantina-competitions",
     )) as CantinaProps
   }, E.toError)
 
-type PdfMd = { comp: CantinaCompetitionsEntity; pdfMd: string }
 let downloadPdfs = (props: CantinaProps) =>
   pipe(
-    props.cantinaCompetitions,
+    props.cantinaCompetitions.slice(1, 2),
     TE.traverseArray((comp) =>
       pipe(
         TE.fromTask(() => loadPdf(comp)),
@@ -63,22 +67,4 @@ const loadPdf = async (contest: CantinaCompetitionsEntity): Promise<string> => {
     })
 
   return md
-}
-
-const withTagsAndName = (finding: FindingStorage) => {
-  // get name from body if it doesnt exist
-  if (!finding.name) finding.name = finding.content.slice(0, 60).trim()
-
-  if (parserConfig.dontParseTags) return finding
-
-  for (let i = 1; i < ALL_TAGS.length; ++i) {
-    let tag = ALL_TAGS[i]
-    if (finding.name.toLowerCase().includes(tag) || finding.content.toLowerCase().includes(tag)) {
-      finding.tags?.push(tag)
-    }
-  }
-  // remove "none" tag
-  if (finding.tags.length > 1) finding.tags = finding.tags.slice(1)
-
-  return finding
 }

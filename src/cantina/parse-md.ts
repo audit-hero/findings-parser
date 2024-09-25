@@ -1,15 +1,17 @@
-import { E, pipe } from "ti-fptsu/lib"
-import { FindingStorage } from "../types.js"
+import { E, flow, pipe } from "ti-fptsu/lib"
 import { convertToFinding } from "./pg-to-finding.js"
 import { Severity } from "ah-shared"
 import { CantinaCompetitionsEntity } from "./types.js"
+import { CantinaParseResult } from "./get-findings.js"
+import { trimCantinaContestName } from "./findings-to-result.js"
 
 export let getHmFindings = (
   md: string,
   contest: CantinaCompetitionsEntity,
-): E.Either<Error, FindingStorage[]> =>
-  pipe(
-    getHmParagraphs(md),
+): E.Either<Error, CantinaParseResult> =>
+  flow(
+    () => console.log(`parsing ${trimCantinaContestName(contest)}`),
+    () => getHmParagraphs(md),
     E.chain((it) => E.traverseArray(getFindingParagraphs)(it)),
     E.map((hmParagraphs) =>
       hmParagraphs
@@ -23,9 +25,9 @@ export let getHmFindings = (
         .flat(),
     ),
     E.chain(E.traverseArray(convertToFinding)),
-    E.map((it) => it as FindingStorage[]),
+    E.map((it) => ({ findings: it, comp: contest, pdfMd: md } as CantinaParseResult)),
     E.mapLeft((it) => new Error(it)),
-  )
+  )()
 
 let getHmParagraphs = (md: string) /* : string[] */ =>
   pipe(

@@ -2,11 +2,11 @@ import { expect, it } from "vitest";
 import fs from "fs";
 import { convertImportantPgToHeadings, fixLineBreaks, getHmFindings, removeAdminComments, } from "./parse-md.js";
 import dedent from "dedent";
-import { comp } from "./cantinaFp.test.js";
+import { comp } from "./get-findings.test.js";
 import { pipe, E } from "ti-fptsu/lib";
 it("should parse markdown", () => {
     const md = fs.readFileSync("./src/cantina/fixtures/opendoc/bitcoin-staking.md", "utf-8");
-    pipe(getHmFindings(md, comp), E.map((it) => expect(it.length).toBe(15)), E.orElse((e) => {
+    pipe(getHmFindings(md, comp), E.map((it) => expect(it.findings.length).toBe(15)), E.orElse((e) => {
         throw e;
     }));
 });
