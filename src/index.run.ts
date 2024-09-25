@@ -35,5 +35,10 @@ setPlaywrightConfig({
 })
 await getCantinaFindings().then((findings) => {
   fs.writeFileSync("result.md", YAML.stringify(findings))
-  Logger.info(() => `Got ${findings.length} findings for ${findings.length} cantina contests`)
+  Logger.info(
+    () =>
+      `Got ${findings.reduce((acc, it) => acc + it.findings.length, 0)} findings for ${
+        findings.length
+      } cantina contests`,
+  )
 })

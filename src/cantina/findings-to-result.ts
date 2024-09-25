@@ -22,7 +22,7 @@ let getContest = ({comp}: CantinaParseResult): FindingsContest =>
       c_platform: "cantina",
       c_date: date,
       c_add_date: date,
-      c_url: `https://cantina.xyz/competitions/${comp.id}`,
+      c_url: `https://cantina.xyz/portfolio/${comp.id}`,
     })
   )
 

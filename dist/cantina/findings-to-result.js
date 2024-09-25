@@ -13,7 +13,7 @@ let getContest = ({ comp }) => pipe(getAnyDateUTCTimestamp(comp.timeline.start),
     c_platform: "cantina",
     c_date: date,
     c_add_date: date,
-    c_url: `https://cantina.xyz/competitions/${comp.id}`,
+    c_url: `https://cantina.xyz/portfolio/${comp.id}`,
 }));
 export let trimCantinaContestName = (comp) => pipe(getAnyDateUTCTimestamp(comp.timeline.start), (date) => trimContestName(comp.title, date));
 //# sourceMappingURL=findings-to-result.js.map

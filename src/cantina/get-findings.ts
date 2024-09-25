@@ -1,6 +1,6 @@
 import { Logger } from "jst-logger"
 import { FindingStorage, ParseResult } from "../types.js"
-import { E, pipe, TE } from "ti-fptsu/lib"
+import { E, flow, pipe, TE } from "ti-fptsu/lib"
 import { loadNextProps } from "../web-load/load-next-props.js"
 import { CantinaCompetitionsEntity, CantinaProps } from "./types.js"
 import pdf2md from "@opendocsg/pdf2md"
@@ -34,15 +34,14 @@ export let getCantinaFindings = async (): Promise<ParseResult[]> =>
   )()
 
 let getNextProps = () =>
-  TE.tryCatch(async () => {
-    return (await loadNextProps(
-      "https://cantina.xyz/portfolio?section=cantina-competitions",
-    )) as CantinaProps
-  }, E.toError)
+  TE.tryCatch(
+    flow(() => "https://cantina.xyz/portfolio?section=cantina-competitions", loadNextProps),
+    E.toError,
+  )
 
 let downloadPdfs = (props: CantinaProps) =>
   pipe(
-    props.cantinaCompetitions.slice(1, 2),
+    props.cantinaCompetitions.slice(4, 6),
     TE.traverseArray((comp) =>
       pipe(
         TE.fromTask(() => loadPdf(comp)),

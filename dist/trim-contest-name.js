@@ -10,12 +10,11 @@ export let addYearAndMonthToContestName = (startDate) => (name) => {
 };
 export let replaceNonTextCharacters = (contestName) => {
     return contestName
-        .replace(/[^a-zA-Z0-9-]/g, "") // replace all non-alphanumeric characters with ""
-        .replace(/-{2,4}/g, "-"); // replace all multiple dashes with single dash
+        .replace(/[^a-zA-Z0-9-]/g, "")
+        .replace(/-{2,4}/g, "-");
 };
 export let truncateLongContestName = (name) => {
-    // cohere table starts with `ah-00000000-3a7b-` 17 characters.
-    // max length is 64, so 47 characters left
+    // max length is 64, so 47 characters left from prefix
     let maxLength = 47;
     let trimmedSlug = name;
     if (trimmedSlug.length > maxLength) {

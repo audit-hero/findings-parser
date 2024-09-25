@@ -1,4 +1,4 @@
-import { E, flow, pipe } from "ti-fptsu/lib"
+import { E, flow, O, pipe } from "ti-fptsu/lib"
 import { convertToFinding } from "./pg-to-finding.js"
 import { Severity } from "ah-shared"
 import { CantinaCompetitionsEntity } from "./types.js"
@@ -12,7 +12,7 @@ export let getHmFindings = (
   flow(
     () => console.log(`parsing ${trimCantinaContestName(contest)}`),
     () => getHmParagraphs(md),
-    E.chain((it) => E.traverseArray(getFindingParagraphs)(it)),
+    (it) => E.traverseArray(getFindingParagraphs)(it),
     E.map((hmParagraphs) =>
       hmParagraphs
         .map((hmParagraph) =>
@@ -29,19 +29,29 @@ export let getHmFindings = (
     E.mapLeft((it) => new Error(it)),
   )()
 
-let getHmParagraphs = (md: string) /* : string[] */ =>
+let getHmParagraphs = (md: string): string[] =>
   pipe(
     md.match(/^#{1,4}.*(high|medium)/gim),
-    E.fromNullable("No headings found"),
-    E.chain((it) => (it.length === 2 ? E.right(it) : E.left("Should have 2 headings"))),
-    // 2 string paragraphs from the regex
-    E.map((it) => {
-      const firstMatchIndex = md.indexOf(it[0])
-      const secondMatchIndex = md.indexOf(it[1])
-      const firstParagraph = md.substring(firstMatchIndex, secondMatchIndex).trim()
-      const secondParagraph = md.substring(secondMatchIndex).trim()
-      return [firstParagraph, secondParagraph]
+    O.fromNullable,
+    O.map((matches) => {
+      const paragraphs = []
+      for (let i = 0; i < matches.length; i++) {
+        const currentMatch = matches[i]
+        const startIndex = md.indexOf(currentMatch)
+        const currentHeadingLevel = currentMatch.match(/^(#+)/)?.[0].length ?? 0
+
+        // Find the next heading with the same level
+        const nextHeadingRegex = new RegExp(`^#{${currentHeadingLevel}}(?!#)`, 'gm')
+        nextHeadingRegex.lastIndex = startIndex + currentMatch.length
+        const nextHeadingMatch = nextHeadingRegex.exec(md)
+
+        const endIndex = nextHeadingMatch ? nextHeadingMatch.index : md.length
+        const paragraph = md.substring(startIndex, endIndex).trim()
+        paragraphs.push(paragraph)
+      }
+      return paragraphs
     }),
+    O.getOrElse(() => [] as string[]),
   )
 
 let getFindingParagraphs = (hmParagraph: string) =>
