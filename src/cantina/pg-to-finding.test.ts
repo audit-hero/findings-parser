@@ -1,7 +1,7 @@
 import { vi, expect, it } from "vitest"
 import { convertToFinding } from "./pg-to-finding.js"
 import dedent from "dedent"
-import { comp } from "./cantinaFp.test.js"
+import { comp } from "./get-findings.test.js"
 import { Severity } from "ah-shared"
 import { pipe, E } from "ti-fptsu/lib"
 
@@ -27,7 +27,7 @@ it("should convert to finding", () => {
     
     **Context:** indexer.go#L683-L691
     `,
-        url: "https://cantina.xyz/competition/1",
+        url: "https://cantina.xyz/portfolio/1",
         pk: "",
         platform: "cantina",
         severity: Severity.HIGH,

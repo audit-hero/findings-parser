@@ -8,7 +8,7 @@ import {
 } from "./parse-md.js"
 import dedent from "dedent"
 import { convertToFinding } from "./pg-to-finding.js"
-import { comp } from "./cantinaFp.test.js"
+import { comp } from "./get-findings.test.js"
 import { Severity } from "ah-shared"
 import { pipe, E } from "ti-fptsu/lib"
 

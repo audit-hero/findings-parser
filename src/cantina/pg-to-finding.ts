@@ -40,7 +40,4 @@ let getContent = (input: Input) => {
     .trim()
 }
 
-let getUrl = (input: Input) => {
-  let { contest } = input
-  return `https://cantina.xyz/competition/${contest.id}`
-}
+let getUrl = ({ contest }: Input) => `https://cantina.xyz/portfolio/${contest.id}`
