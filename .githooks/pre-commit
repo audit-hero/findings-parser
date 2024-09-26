@@ -41,6 +41,7 @@ function check_committer() {
 }
 
 function build_dist() {
+  rm -rf dist
   yarn test
   yarn build
   git add dist
