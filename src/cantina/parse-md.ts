@@ -31,7 +31,7 @@ export let getHmFindings = (
 
 let getHmParagraphs = (md: string): string[] =>
   pipe(
-    md.match(/^#{1,4}.*(high|medium)/gim),
+    md.match(/^#{1,4}.*(critical|high|medium)/gim),
     O.fromNullable,
     O.map((matches) => {
       const paragraphs = []
@@ -56,7 +56,7 @@ let getHmParagraphs = (md: string): string[] =>
 
 let getFindingParagraphs = (hmParagraph: string) =>
   pipe(
-    hmParagraph.match(/^#{1,4}.*(high|medium)/i),
+    hmParagraph.match(/^#{1,4}.*(critical|high|medium)/i),
     E.fromNullable("Not a HM paragraph"),
     E.map(() => {
       const regex = /^(\*\*|)(\s+|)(\d+\.\d+\.\d+)/gm
@@ -111,7 +111,7 @@ export let removeAdminComments = (paragraph: string): string =>
 
 export let convertImportantPgToHeadings = (paragraph: string): string =>
   paragraph.replace(
-    /^(\*\*|)(Description|Impact|Recommendation|Proof of concept|PoC):(\*\*|)(\s+|)/gim,
+    /^(\*\*|)(Description|Impact|Recommendation|Proof of concept|PoC|Details):(\*\*|)(\s+|)/gim,
     "## $2\n\n",
   )
 

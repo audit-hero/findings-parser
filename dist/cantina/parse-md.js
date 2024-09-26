@@ -9,7 +9,7 @@ export let getHmFindings = (md, contest) => flow(() => console.log(`parsing ${tr
     contest,
 })))
     .flat()), E.chain(E.traverseArray(convertToFinding)), E.map((it) => ({ findings: it, comp: contest, pdfMd: md })), E.mapLeft((it) => new Error(it)))();
-let getHmParagraphs = (md) => pipe(md.match(/^#{1,4}.*(high|medium)/gim), O.fromNullable, O.map((matches) => {
+let getHmParagraphs = (md) => pipe(md.match(/^#{1,4}.*(critical|high|medium)/gim), O.fromNullable, O.map((matches) => {
     const paragraphs = [];
     for (let i = 0; i < matches.length; i++) {
         const currentMatch = matches[i];
@@ -25,7 +25,7 @@ let getHmParagraphs = (md) => pipe(md.match(/^#{1,4}.*(high|medium)/gim), O.from
     }
     return paragraphs;
 }), O.getOrElse(() => []));
-let getFindingParagraphs = (hmParagraph) => pipe(hmParagraph.match(/^#{1,4}.*(high|medium)/i), E.fromNullable("Not a HM paragraph"), E.map(() => {
+let getFindingParagraphs = (hmParagraph) => pipe(hmParagraph.match(/^#{1,4}.*(critical|high|medium)/i), E.fromNullable("Not a HM paragraph"), E.map(() => {
     const regex = /^(\*\*|)(\s+|)(\d+\.\d+\.\d+)/gm;
     let match;
     const matches = [];
@@ -59,6 +59,6 @@ export let fixLineBreaks = (paragraph) => paragraph
 // \n**Babylon:** Fixed in staking-indexer PR 124."
 // eg /remove ^**.*:**.*(fixed|solved|will not)/gmi
 export let removeAdminComments = (paragraph) => paragraph.replace(/\n\*\*.*:\*\*.*(fixed|solved|will not).*\n?/gi, "");
-export let convertImportantPgToHeadings = (paragraph) => paragraph.replace(/^(\*\*|)(Description|Impact|Recommendation|Proof of concept|PoC):(\*\*|)(\s+|)/gim, "## $2\n\n");
+export let convertImportantPgToHeadings = (paragraph) => paragraph.replace(/^(\*\*|)(Description|Impact|Recommendation|Proof of concept|PoC|Details):(\*\*|)(\s+|)/gim, "## $2\n\n");
 let removeMoreThanDoubleEmptyLines = (paragraph) => paragraph.replaceAll(/\n{2,}/gm, "\n");
 //# sourceMappingURL=parse-md.js.map
