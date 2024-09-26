@@ -1,6 +1,7 @@
 import { Logger } from "jst-logger";
 import { E, flow, pipe, TE } from "ti-fptsu/lib";
 import { loadNextProps } from "../web-load/load-next-props.js";
+//@ts-ignore
 import pdf2md from "@opendocsg/pdf2md";
 import { log } from "ti-fptsu/log";
 import { getHmFindings } from "./parse-md.js";
