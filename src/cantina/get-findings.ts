@@ -6,7 +6,7 @@ import { CantinaCompetitionsEntity, CantinaProps } from "./types.js"
 import pdf2md from "@opendocsg/pdf2md"
 import { log } from "ti-fptsu/log"
 import { getHmFindings } from "./parse-md.js"
-import { findingsToResults } from "./findings-to-result.js"
+import { findingsToResults, trimCantinaContestName } from "./findings-to-result.js"
 
 export type CantinaParseResult = PdfMd & {
   findings: FindingStorage[]
@@ -18,6 +18,7 @@ export let getCantinaFindings = async (): Promise<ParseResult[]> =>
     getNextProps(),
     log(() => "downloading pdfs"),
     TE.chain(downloadPdfs),
+    TE.map((pdfs) => pdfs.filter((it) => it.pdfMd)),
     log(() => "parsing pdfs"),
     TE.chain((pdfs) =>
       pipe(
@@ -51,8 +52,12 @@ let downloadPdfs = (props: CantinaProps) =>
     TE.map((it) => it as PdfMd[]),
   ) as TE.TaskEither<Error, PdfMd[]>
 
-const loadPdf = async (contest: CantinaCompetitionsEntity): Promise<string> => {
+const loadPdf = async (contest: CantinaCompetitionsEntity): Promise<string | undefined> => {
   Logger.debug(`loading pdf ${contest.pdfLink}`)
+  if (contest.pdfLink.includes("cantina_competition_superform_erc115A_dec2023")) {
+    console.log(` - skipping, because it's known to fail`)
+    return undefined
+  }
   let file = await (await fetch(contest.pdfLink)).arrayBuffer()
 
   // @ts-ignore
@@ -61,7 +66,7 @@ const loadPdf = async (contest: CantinaCompetitionsEntity): Promise<string> => {
       return text as string
     })
     .catch((err: any) => {
-      console.error(err)
+      console.error(`pdf2md failed for ${trimCantinaContestName(contest)}`)
       return undefined
     })
 
