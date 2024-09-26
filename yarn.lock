@@ -244,16 +244,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opendocsg/pdf2md@npm:0.1.25":
-  version: 0.1.25
-  resolution: "@opendocsg/pdf2md@npm:0.1.25"
+"@opendocsg/pdf2md@npm:0.1.29":
+  version: 0.1.29
+  resolution: "@opendocsg/pdf2md@npm:0.1.29"
   dependencies:
     enumify: "npm:^1.0.4"
     minimist: "npm:^1.2.5"
     pdfjs-dist: "npm:^2.9.359"
   bin:
     pdf2md: lib/pdf2md-cli.js
-  checksum: e9a8d8b34801ecd23000b6b776d701ae07452bd4f692892dac9f0906daae8834c4ae0a103fed2afbaaf22c13e41dc0b4795cd38baf0c5099b8402c62fbedd281
+  checksum: 5a7a4f342161613a4a23dcb216479d23efa4ad13f3f17a29964f08dbb0e950ea7140cf34fb2b40da14a0d3b7809b0f9e70af47b5f8c84de5084db7ddbad82804
   languageName: node
   linkType: hard
 
@@ -1039,7 +1039,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "findings-parser@workspace:."
   dependencies:
-    "@opendocsg/pdf2md": "npm:0.1.25"
+    "@opendocsg/pdf2md": "npm:0.1.29"
     "@types/node": "npm:^20.11.17"
     ah-shared: "audit-hero/ah-shared#52c0fea0870437daf865eefa13667a042622bd5a"
     any-date-parser: "npm:^1.5.4"
