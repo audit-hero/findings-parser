@@ -66,7 +66,7 @@ const loadPdf = async (contest: CantinaCompetitionsEntity): Promise<string | und
       return text as string
     })
     .catch((err: any) => {
-      console.error(`pdf2md failed for ${trimCantinaContestName(contest)}`)
+      console.error(`pdf2md failed for ${trimCantinaContestName(contest)}\n${err}`)
       return undefined
     })
 

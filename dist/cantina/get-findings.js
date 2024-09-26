@@ -23,7 +23,7 @@ const loadPdf = async (contest) => {
         return text;
     })
         .catch((err) => {
-        console.error(`pdf2md failed for ${trimCantinaContestName(contest)}`);
+        console.error(`pdf2md failed for ${trimCantinaContestName(contest)}\n${err}`);
         return undefined;
     });
     return md;
