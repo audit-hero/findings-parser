@@ -26,7 +26,7 @@ let getHmParagraphs = (md) => pipe(md.match(/^#{1,4}.*(high|medium)/gim), O.from
     return paragraphs;
 }), O.getOrElse(() => []));
 let getFindingParagraphs = (hmParagraph) => pipe(hmParagraph.match(/^#{1,4}.*(high|medium)/i), E.fromNullable("Not a HM paragraph"), E.map(() => {
-    const regex = /^\s+(\d+\.\d+\.\d+|\*\*\d+\.\d+\.\d+\*\*)/gm;
+    const regex = /^(\*\*|)(\s+|)(\d+\.\d+\.\d+)/gm;
     let match;
     const matches = [];
     while ((match = regex.exec(hmParagraph)) !== null) {

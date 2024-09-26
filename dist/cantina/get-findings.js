@@ -9,7 +9,7 @@ export let getCantinaFindings = async () => pipe(getNextProps(), log(() => "down
     throw e;
 }))();
 let getNextProps = () => TE.tryCatch(flow(() => "https://cantina.xyz/portfolio?section=cantina-competitions", loadNextProps), E.toError);
-let downloadPdfs = (props) => pipe(props.cantinaCompetitions.slice(4, 6), TE.traverseArray((comp) => pipe(TE.fromTask(() => loadPdf(comp)), TE.map((pdfMd) => ({ comp, pdfMd })))), TE.map((it) => it));
+let downloadPdfs = (props) => pipe(props.cantinaCompetitions.slice(4, 5), TE.traverseArray((comp) => pipe(TE.fromTask(() => loadPdf(comp)), TE.map((pdfMd) => ({ comp, pdfMd })))), TE.map((it) => it));
 const loadPdf = async (contest) => {
     Logger.debug(`loading pdf ${contest.pdfLink}`);
     let file = await (await fetch(contest.pdfLink)).arrayBuffer();

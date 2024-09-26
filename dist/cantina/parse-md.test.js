@@ -10,6 +10,28 @@ it("should parse markdown", () => {
         throw e;
     }));
 });
+it("splits on double bold paragraphs", () => {
+    let pg = dedent `
+  #### 3.1 High Risk 
+
+  **3.2.2** _recalfs **should use** earningof **instead of** balanceof **to calculate fs** 
+
+  _Submitted by cccz_ 
+
+  **Goat:** thats correct. fixed. 
+
+  **3.2.3 When calling** _recalfs **from** dctstake **, the calculated fs may be incorrect** 
+
+  _Submitted by cccz_ 
+
+  **Severity:** Medium Risk 
+
+  **Context:** _(No context files were provided by the reviewer)_ 
+  `;
+    pipe(getHmFindings(pg, comp), E.map((it) => expect(it.findings.length).toBe(2)), E.orElse((e) => {
+        throw e;
+    }));
+});
 it("should fix line breaks", () => {
     let pg = dedent `
   3.1.2 Spending multiple Unbonding transactions is not supported by the Staking indexer \n\n_Submitted by zigtur, also found by n4nika_ **Severity:** High Risk **Context:** indexer.go#L683-L691 **Description:** The getSpentUnbondingTx function \n\n**Babylon:** Fixed in staking-indexer PR 124.`;

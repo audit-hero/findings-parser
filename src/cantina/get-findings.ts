@@ -41,7 +41,7 @@ let getNextProps = () =>
 
 let downloadPdfs = (props: CantinaProps) =>
   pipe(
-    props.cantinaCompetitions.slice(4, 6),
+    props.cantinaCompetitions.slice(4, 5),
     TE.traverseArray((comp) =>
       pipe(
         TE.fromTask(() => loadPdf(comp)),
